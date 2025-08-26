@@ -8,28 +8,28 @@ export default function Testimonial() {
   const testimonials = [
     {
       name: "Amit Sharma",
-      text: "PhonePe makes my bill payments effortless. It's quick and I never miss a due date.",
-      img: "/images/Bavatar.jpg",
+      text: "FirstUpay makes my bill payments effortless. It's quick and I never miss a due date.",
+      img: "/male.jpg",
     },
     {
       name: "Priya Verma",
-      text: "I trust PhonePe for all my recharges and transfers. Super reliable and safe!",
-      img: "/images/Gavatar.jpg",
+      text: "I trust FirstUpay for all my recharges and transfers. Super reliable and safe!",
+      img: "/female.jpg",
     },
     {
       name: "Ravi Kumar",
-      text: "Investing with PhonePe is so easy. Everything I need is in one app.",
-      img: "/images/Bavatar.jpg",
+      text: "Investing with FirstUpay is so easy. Everything I need is in one app.",
+      img: "/male.jpg",
     },
     {
       name: "Sneha Patel",
-      text: "Sending money to family takes seconds. PhonePe is a lifesaver.",
-      img: "/images/Gavatar.jpg",
+      text: "Sending money to family takes seconds. FirstUpay is a lifesaver.",
+      img: "/female.jpg",
     },
     {
       name: "Arjun Singh",
-      text: "Simple, secure, and fast. PhonePe is my go-to payment app every day.",
-      img: "/images/Bavatar.jpg",
+      text: "Simple, secure, and fast. FirstUpay is my go-to payment app every day.",
+      img: "/male.jpg",
     },
   ];
 
@@ -41,7 +41,7 @@ export default function Testimonial() {
       </h2>
 
       <p className="text-gray-600 max-w-2xl mb-10">
-        Millions of Indians trust PhonePe for fast, secure, and reliable
+        Millions of Indians trust FirstUpay for fast, secure, and reliable
         payments every day. Here’s what some of our users have to say:
       </p>
 
