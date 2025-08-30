@@ -3,7 +3,7 @@ import { FiMenu } from "react-icons/fi";
 
 const NavBar = ({toggleSideBar}) => {
   return (
-    <nav className="bg-blue-500 text-white px-6 py-3 flex justify-between items-center shadow-lg">
+    <nav className="bg-gradient-to-r from-blue-400 via bg-purple-500 to-pink-500 text-white px-6 py-3 flex justify-between items-center shadow-lg">
        <Link to="/" className="text-2xl font-bold">
         UPI Pay
       </Link>

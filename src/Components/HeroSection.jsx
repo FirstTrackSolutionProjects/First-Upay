@@ -9,15 +9,15 @@ const slides = [
     desc: "Send and receive money instantly with UPI Pay. 100% secure, anytime, anywhere.",
     btn1: { text: "💸 Send Money", link: "/payment" },
     btn2: { text: "📱 Scan & Pay", link: "/qr" },
-    bg: "from-blue-600 to-blue-400",
+    bg: "from-indigo-600 to-cyan-500",
   },
   {
     id: 2,
     title: "Pay Bills in Seconds ⚡",
     desc: "Electricity, water, mobile recharge & more — all in one place.",
     btn1: { text: "📂 Pay Bills", link: "/bills" },
-    btn2: { text: "📱 Scan QR", link: "/qr" },
-    bg: "from-purple-600 to-pink-500",
+    btn2: { text: "📞 Recharge Now", link: "/recharge" },
+    bg: "from-pink-600 to-orange-400",
   },
   {
     id: 3,
@@ -25,12 +25,22 @@ const slides = [
     desc: "Make payments at your favorite stores and earn cashback & rewards.",
     btn1: { text: "🛒 Start Shopping", link: "/shop" },
     btn2: { text: "🎁 View Rewards", link: "/rewards" },
-    bg: "from-green-600 to-teal-500",
+    bg: "from-emerald-500 to-lime-400",
+  },
+    {
+    id: 4,
+    title: "Instant Loan & Credit 💳",
+    desc: "Get small loans and credit instantly with flexible repayment options.",
+    btn1: { text: "💳 Apply Loan", link: "/loan" },
+    btn2: { text: "📊 Check Credit", link: "/credit" },
+    bg: "from-purple-600 to-fuchsia-400",
   },
 ];
 
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
+  const [startX, setStartX] = useState(0);
+  const [endX, setEndX] = useState(0);
 
   // Auto slide every 5 seconds
   useEffect(() => {
@@ -40,10 +50,35 @@ const HeroSection = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // Handle touch/mouse drag end
+  const handleSwipe = () => {
+    const distance = endX - startX;
+    if (distance > 50) {
+      // Swipe Right -> Previous Slide
+      setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+    } else if (distance < -50) {
+      // Swipe Left -> Next Slide
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }
+  };
+
+
 
 
   return (
-    <section className="relative w-full h-[60vh] overflow-hidden mt-6">
+      <section
+      className="relative w-full h-[60vh] overflow-hidden mt-6"
+      onTouchStart={(e) => setStartX(e.touches[0].clientX)}
+      onTouchEnd={(e) => {
+        setEndX(e.changedTouches[0].clientX);
+        handleSwipe();
+      }}
+      onMouseDown={(e) => setStartX(e.clientX)}
+      onMouseUp={(e) => {
+        setEndX(e.clientX);
+        handleSwipe();
+      }}
+    >
       {/* Slides */}
       <div
         className="flex transition-transform duration-700 ease-in-out h-full"

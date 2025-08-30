@@ -3,6 +3,7 @@ import HeroSection from '../Components/HeroSection'
 import Services from '../Components/Services'
 import Offers from '../Components/Offers'
 import Travel from '../Components/Travel'
+import UtilityServices from '../Components/UtilityServices'
 import Testimonial from '../Components/Testimonial'
 import Transaction from '../Components/Transaction'
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
     <Services/>
     <Offers/>
     <Travel/>
+    <UtilityServices/>
     <Testimonial/>
     <Transaction/>
     </>

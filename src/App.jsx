@@ -7,6 +7,7 @@ import Payment from "./Pages/Payment";
 import Recharge from "./Pages/Recharge";
 import Reward from "./Pages/Reward";
 import Bill from "./Pages/Bill";
+import Loan from "./Pages/Loan";
 import AboutUs from "./Pages/AboutUs";
 import ContactUs from "./Pages/ContactUs";
 import Support from "./Pages/Support";
@@ -30,8 +31,9 @@ function App() {
          <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/payment" element={<Payment />} />
-          <Route path="/recharges" element={<Recharge />} />
+          <Route path="/recharge" element={<Recharge />} />
           <Route path="/bills" element={<Bill />} />
+          <Route path="/loan" element={<Loan />} />
           <Route path="/rewards" element={<Reward />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />

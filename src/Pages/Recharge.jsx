@@ -24,7 +24,7 @@ const rechargeOptions = [
 const Recharge = () => {
   return (
     <div className="p-8 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold mb-8">Recharges</h2>
+      <h2 className="text-3xl font-bold mb-8">RECHARGE</h2>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
         {rechargeOptions.map((item) => (
           <div key={item.id} className="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
