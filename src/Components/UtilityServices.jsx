@@ -48,7 +48,7 @@ import {
 
 const services = [
   { name: "Mobile Recharge", icon: <FaMobileAlt />, color: "from-pink-400 to-pink-600" },
-  { name: "Cable TV", icon: <FaTv />, color: "from-yellow-400 to-orange-500" },
+  { name: "DTH TV", icon: <FaTv />, color: "from-yellow-400 to-orange-500" },
   { name: "FASTag Recharge", icon: <FaCar />, color: "from-red-400 to-red-600" },
   { name: "Piped Gas", icon: <FaGasPump />, color: "from-green-400 to-green-600" },
   { name: "Electricity", icon: <FaLightbulb />, color: "from-indigo-400 to-indigo-600" },
@@ -59,7 +59,7 @@ const services = [
 
 const UtilityServices = () => {
   return (
-    <div className="bg-gray-50 py-12 px-6">
+    <div className=" py-12 px-6">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
         All Your Payments in One Place
       </h2>

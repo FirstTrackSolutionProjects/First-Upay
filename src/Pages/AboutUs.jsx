@@ -2,16 +2,16 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="max-w-5xl mx-auto p-6">
+    <div className="max-w-4xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4">About Us</h1>
-      <p className="text-gray-700 mb-4">
-        Welcome to First Upay, your trusted platform for instant, secure, and seamless payments. 
-        Our mission is to make digital transactions easy and accessible to everyone.
+      <p className="text-gray-700 leading-relaxed mb-3">
+        Welcome to our platform! We provide a one-stop solution for mobile
+        recharges, bill payments, FASTag recharges, loans, and financial
+        services.
       </p>
-      <p className="text-gray-700">
-         First Upay leverages cutting-edge technology to provide a smooth and 
-        reliable payment experience. Our team is committed to maintaining the highest standards 
-        of security and customer service.
+      <p className="text-gray-700 leading-relaxed">
+        Our mission is to deliver secure, fast, and reliable services while
+        making digital transactions simple and accessible for everyone.
       </p>
     </div>
   );

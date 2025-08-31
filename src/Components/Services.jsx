@@ -1,5 +1,5 @@
 import React from "react";
-import { Send, Smartphone, Wallet } from "lucide-react"; 
+import { Send, Smartphone, Wallet, HandCoins, Gem, LineChart } from "lucide-react"; 
 
 
 const services = [
@@ -21,6 +21,24 @@ const services = [
     description: "Quick and easy prepaid & postpaid recharges",
     icon: <Smartphone className="w-12 h-12 text-purple-600" />,
   },
+  {
+    id: 4,
+    title: "Loan Services",
+    description: "Apply for personal & business loans with flexible EMIs",
+    icon: <HandCoins className="w-12 h-12 text-yellow-500" />,
+  },
+  {
+    id: 5,
+    title: "Gold Savings",
+    description: "Buy, save & invest in digital gold securely",
+    icon: <Gem className="w-12 h-12 text-yellow-600" />,
+  },
+  {
+    id: 6,
+    title: "Investments",
+    description: "Grow your money with smart investment options",
+    icon: <LineChart className="w-12 h-12 text-teal-500" />,
+  }
 ];
 
 const Services = () => {

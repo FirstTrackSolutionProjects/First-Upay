@@ -8,30 +8,13 @@ const loans = [
     desc: "Quick personal loans for your urgent needs with minimal documentation.",
     link: "/loan/personal",
   },
-  {
+{
     id: 2,
-    title: "Home Loan",
-    desc: "Make your dream home a reality with affordable EMIs and flexible tenure.",
-    link: "/loan/home",
-  },
-  {
-    id: 3,
     title: "Business Loan",
     desc: "Grow your business with instant capital and easy repayment options.",
     link: "/loan/business",
   },
-  {
-    id: 4,
-    title: "Education Loan",
-    desc: "Finance your studies with student-friendly education loan plans.",
-    link: "/loan/education",
-  },
-  {
-    id: 5,
-    title: "Car Loan",
-    desc: "Buy your dream car with low interest and flexible repayment options.",
-    link: "/loan/car",
-  },
+
 ];
 
 const Loan = () => {

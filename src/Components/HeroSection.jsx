@@ -29,10 +29,10 @@ const slides = [
   },
     {
     id: 4,
-    title: "Instant Loan & Credit 💳",
+    title: "Instant Loan & EMI Calculator 📅",
     desc: "Get small loans and credit instantly with flexible repayment options.",
     btn1: { text: "💳 Apply Loan", link: "/loan" },
-    btn2: { text: "📊 Check Credit", link: "/credit" },
+    btn2: { text: "📊 EMI Calculator", link: "/emi-calculator" },
     bg: "from-purple-600 to-fuchsia-400",
   },
 ];
@@ -46,7 +46,7 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
@@ -61,9 +61,6 @@ const HeroSection = () => {
       setCurrent((prev) => (prev + 1) % slides.length);
     }
   };
-
-
-
 
   return (
       <section

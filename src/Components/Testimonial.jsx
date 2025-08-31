@@ -34,7 +34,7 @@ export default function Testimonial() {
   ];
 
   return (
-    <div className="w-full bg-white py-12 px-6 flex flex-col items-center text-center">
+    <div className="w-full  py-12 px-6 flex flex-col items-center text-center">
       {/* Heading */}
       <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
         What Our Users Say
