@@ -9,7 +9,7 @@ import Payment from "./Pages/Payment";
 import Recharge from "./Pages/Recharge";
 import DthRecharge from "./Pages/DthRecharge";
 import ElectricityBill from "./Pages/ElectricityBill";
-import Fastag from "./Pages/Fastag";
+import FasTag from "./Pages/FasTag";
 import Reward from "./Pages/Reward";
 import Bill from "./Pages/Bill";
 import Bus from "./Pages/Bus";
@@ -53,7 +53,7 @@ function App() {
           <Route path="/recharge" element={<Recharge />} />
           <Route path="/dth-recharge" element={<DthRecharge />} />
           <Route path="/electricity-bill" element={<ElectricityBill />} />
-          <Route path="/fastag" element={<Fastag />} />
+          <Route path="/fastag" element={<FasTag />} />
           <Route path="/bills" element={<Bill />} />
           <Route path="/bus" element={<Bus />} />
           <Route path="/train" element={<Train />} />
