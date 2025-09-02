@@ -20,6 +20,15 @@ const ContactUs = () => {
   return (
     <div className="max-w-3xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
+
+       <div className="mb-6 flex justify-center">
+        <img
+          src="/images/contact.jpg"
+          alt="Contact Us"
+          className="rounded-xl shadow-md w-full md:w-2/3"
+        />
+      </div>
+
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
           type="text"

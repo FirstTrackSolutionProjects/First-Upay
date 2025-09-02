@@ -16,11 +16,22 @@ import Bus from "./Pages/Bus";
 import Train from "./Pages/Train";
 import Flight from "./Pages/Flight";
 import Hotel from "./Pages/Hotel";
+import Cashback from "./Pages/Cashback";
+import RentalCar from "./Pages/RentalCar";
 import Loan from "./Pages/Loan";
+
+// import PersonalLoan from "./Pages/PersonalLoan";
+// import BusinessLoan from "./Pages/BusinessLoan";
 import GoldLoan from "./Pages/GoldLoan";
+import GoldSip from "./Pages/GoldSip";
 import Insurance from "./Pages/Insurance";
+import VehicleInsurance from "./Pages/VehicleInsurance";
+import HealthInsurance from "./Pages/HealthInsurance";
+import TermInsurance from "./Pages/TermInsurance";
+import AccidentalInsurance from "./Pages/AccidentalInsurance";
 import EMICalculator from "./Pages/EMICalculator";
 import AboutUs from "./Pages/AboutUs";
+import Blog from "./Pages/Blog";
 import ContactUs from "./Pages/ContactUs";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import Terms from "./Pages/Terms";
@@ -59,12 +70,23 @@ function App() {
           <Route path="/train" element={<Train />} />
           <Route path="/flight" element={<Flight />} />
           <Route path="/hotel" element={<Hotel />} />
+          <Route path="/cashback" element={<Cashback />} />
+          <Route path="/rental-car" element={<RentalCar />} />
           <Route path="/loan" element={<Loan />} />
+
+          {/* <Route path="/job-consulting/loan" element={<PersonalLoan />} />
+          <Route path="/job-consulting/loan" element={<BusinessLoan />} /> */}
           <Route path="/gold-loan" element={<GoldLoan />} />
+          <Route path="/gold-sip" element={<GoldSip />} />
           <Route path="/insurance" element={<Insurance />} />
+          <Route path="/insurance/vehicle" element={<VehicleInsurance />} />
+          <Route path="/insurance/health" element={<HealthInsurance />} />
+          <Route path="/insurance/term" element={<TermInsurance />} />
+          <Route path="/insurance/accidental" element={<AccidentalInsurance />} />
           <Route path="/emi-calculator" element={<EMICalculator />} />
           <Route path="/rewards" element={<Reward />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />

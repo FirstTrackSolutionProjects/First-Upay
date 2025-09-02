@@ -1,4 +1,4 @@
-import { FaUniversity, FaCoins, FaShieldAlt } from "react-icons/fa";
+import { FaUniversity, FaCoins, FaShieldAlt, FaCrown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Finance() {
@@ -6,6 +6,7 @@ export default function Finance() {
     { title: "Instant Loan", icon: <FaUniversity size={40} className="text-indigo-600" />, link: "/loan" },
     { title: "Invest in Gold", icon: <FaCoins size={40} className="text-yellow-500" />, link: "/gold-loan" },
     { title: "Insurance", icon: <FaShieldAlt size={40} className="text-green-600" />, link: "/insurance" },
+    { title: "Monthly Gold SIP", icon: <FaCrown size={42} className="text-amber-500" />, link: "/gold-sip", highlight: true },
   
   ];
 

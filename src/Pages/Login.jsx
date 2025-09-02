@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { FcGoogle } from "react-icons/fc";
 
 export default function Login() {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -13,8 +14,22 @@ export default function Login() {
     alert(`Logging in with ${formData.email} and ${formData.password}`);
   };
 
+  const handleGoogleLogin = () => {
+    alert("Google login clicked");
+  };
+
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+     <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 px-4">
+      {/* Image */}
+       <div className="w-full md:w-1/2 flex justify-center m-4">
+        <img
+          src="/images/login.jpg" 
+          alt="Login Illustration"
+          className="w-full h-80 object-cover"
+        />
+      </div>
+      {/*Form */}
+     <div className="flex w-full md:w-1/2 items-center justify-center p-6">
     <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
       <h2 className="text-2xl font-bold text-center text-indigo-600 mb-6">Login</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -50,6 +65,20 @@ export default function Login() {
         </button>
       </form>
 
+      <div className="flex items-center my-4">
+        <hr className="flex-grow border-t border-gray-300" />
+        <span className="mx-2 text-gray-500">or</span>
+        <hr className="flex-grow border-t border-gray-300" />
+      </div>
+
+      <button
+        onClick={handleGoogleLogin}
+        className="w-full flex items-center justify-center border border-gray-300 py-2 rounded-lg hover:bg-gray-100 transition"
+      >
+        <FcGoogle className="mr-2" size={20} />
+        Continue with Google
+      </button>
+
       <p className="text-sm text-gray-600 mt-4 text-center">
         Don’t have an account?{" "}
         <Link to="/register" className="text-indigo-600 hover:underline">
@@ -57,6 +86,7 @@ export default function Login() {
         </Link>
       </p>
     </div>
+</div>
 </div>
   );
 }

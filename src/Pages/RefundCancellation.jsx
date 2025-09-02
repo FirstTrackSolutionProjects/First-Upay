@@ -2,28 +2,46 @@ import React from "react";
 
 const RefundCancellation = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-4">Refund & Cancellation Policy</h1>
-      <p className="text-gray-700 mb-3">
-        We aim to ensure smooth and reliable transactions. However, refunds and
-        cancellations will be handled under the following guidelines:
+    <div className="max-w-6xl mx-auto p-6">
+      {/* Heading */}
+      <h1 className="text-4xl font-bold mb-6 text-center">
+        Refund & Cancellation Policy
+      </h1>
+
+      {/* Intro */}
+      <p className="text-gray-700 leading-relaxed text-lg mb-4">
+        We strive to ensure complete satisfaction for all our customers. Our
+        refund and cancellation policy is designed to be transparent and
+        customer-friendly.
       </p>
-      <ul className="list-disc list-inside text-gray-700 space-y-2">
-        <li>
-          Refunds are only applicable in cases of failed or incomplete
-          transactions.
-        </li>
-        <li>
-          Successfully completed transactions cannot be cancelled or refunded.
-        </li>
-        <li>
-          Refunds (if applicable) will be processed within 5–7 business days to
-          the original payment method.
-        </li>
-        <li>
-          Service charges, if any, are non-refundable under all circumstances.
-        </li>
-      </ul>
+
+      {/* Refund Policy */}
+      <div className="mt-10">
+        <h2 className="text-2xl font-semibold mb-3">Refund Policy</h2>
+        <ul className="list-disc pl-6 space-y-2 text-gray-700 text-lg">
+          <li>
+            Recharges once successful cannot be cancelled or refunded.
+          </li>
+          <li>
+            If a recharge fails and money is deducted, refund will be processed
+            within 5–7 working days.
+          </li>
+          <li>
+            In case of duplicate transactions, the excess amount will be
+            refunded.
+          </li>
+        </ul>
+      </div>
+
+      {/* Cancellation Policy */}
+      <div className="mt-10">
+        <h2 className="text-2xl font-semibold mb-3">Cancellation Policy</h2>
+        <p className="text-gray-700 leading-relaxed text-lg">
+          Loan applications or service requests once submitted cannot be
+          cancelled. For special cases, customers can contact support for
+          assistance.
+        </p>
+      </div>
     </div>
   );
 };

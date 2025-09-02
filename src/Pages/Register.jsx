@@ -23,7 +23,17 @@ export default function Register() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 px-4">
+      {/* Image */}
+       <div className="w-full md:w-1/2 flex justify-center m-4">
+        <img
+          src="/images/register.jpg" 
+          alt="Register Illustration"
+          className="w-full h-80 object-cover"
+        />
+      </div>
+      {/*Form */}
+    <div className="flex w-full md:w-1/2 items-center justify-center p-6">
     <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
       <h2 className="text-2xl font-bold text-center text-indigo-600 mb-6">Register</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -90,6 +100,7 @@ export default function Register() {
         </Link>
       </p>
     </div>
+</div>
 </div>
   );
 }

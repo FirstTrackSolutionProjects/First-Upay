@@ -17,7 +17,17 @@ const ElectricityBill = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white shadow-lg rounded-2xl mt-8">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 px-4">
+      {/* Image */}
+       <div className="w-full md:w-1/2 flex justify-center m-4">
+        <img
+          src="/images/electricity bill.jpg" 
+          alt="Electricity Bill Illustration"
+          className="w-full h-80 object-cover"
+        />
+      </div>
+
+    <div className="w-full mx-auto p-6 bg-white shadow-lg rounded-2xl mt-8">
       <h2 className="text-2xl font-bold text-center mb-6 text-indigo-600">
         Electricity Bill Payment
       </h2>
@@ -68,6 +78,7 @@ const ElectricityBill = () => {
         </button>
       </form>
     </div>
+</div>
   );
 };
 
