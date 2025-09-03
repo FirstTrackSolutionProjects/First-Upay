@@ -2,7 +2,9 @@ import { useState } from "react";
 
 export default function Cashback() {
   const [form, setForm] = useState({
-    rewardPoints: "",
+    name: "",
+    email: "",
+    transactionId: "",
     cashbackAmount: "",
   });
 
@@ -13,23 +15,51 @@ export default function Cashback() {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(
-      `Redeeming ${form.rewardPoints} reward points and requesting cashback of ₹${form.cashbackAmount}`
+     `Cashback request submitted!\nName: ${form.name}\nEmail: ${form.email}\nTransaction ID: ${form.transactionId}\nAmount: ₹${form.cashbackAmount}`
     );
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50 p-6">
-      <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 px-4">
+      {/* Image */}
+       <div className="w-full md:w-1/2 flex justify-center m-4">
+        <img
+          src="/images/cashback.jpg" 
+          alt="Cashback Illustration"
+          className="w-full h-80 object-cover"
+        />
+      </div>
+  
+     <div className="w-full mx-auto p-6 bg-white shadow-lg rounded-2xl mt-8">
         <h2 className="text-2xl font-bold text-purple-600 mb-6 text-center">
-          Rewards & Cashback 🎁
+          Cashback 🎁
         </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
-          <input
-            type="number"
-            name="rewardPoints"
-            placeholder="Enter reward points..."
-            value={form.rewardPoints}
+           <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            value={form.name}
             onChange={handleChange}
+            required
+            className="w-full p-3 border rounded-lg"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            value={form.email}
+            onChange={handleChange}
+            required
+            className="w-full p-3 border rounded-lg"
+          />
+          <input
+            type="text"
+            name="transactionId"
+            placeholder="Enter transaction ID"
+            value={form.transactionId}
+            onChange={handleChange}
+            required
             className="w-full p-3 border rounded-lg"
           />
           <input

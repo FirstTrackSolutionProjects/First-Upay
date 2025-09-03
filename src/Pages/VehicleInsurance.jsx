@@ -15,8 +15,17 @@ export default function VehicleInsurance() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-blue-50 p-6">
-      <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md border-2 border-blue-400">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 px-4">
+      {/* Image */}
+       <div className="w-full md:w-1/2 flex justify-center m-4">
+        <img
+          src="/images/vehicle.jpg" 
+          alt="Vehicle Insurance Illustration"
+          className="w-full h-80 object-cover"
+        />
+      </div>
+  
+     <div className="w-full mx-auto p-6 bg-white shadow-lg rounded-2xl mt-8">
         <h2 className="text-2xl font-bold text-blue-600 mb-6 text-center">
           Vehicle Insurance 🚗
         </h2>

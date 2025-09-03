@@ -32,8 +32,21 @@ const Footer = () => {
         {/* Contact */}
         <div>
           <h3 className="text-lg font-bold mb-3">Contact Us</h3>
-          <p>Email: support@firstupay.com</p>
-          <p>Phone: +91 1234567890</p>
+         Email:{" "}
+          <a
+            href="mailto:support@example.com"
+            className="text-white hover:underline"
+          >
+            support@firstupay.com
+          </a>
+          <br />
+           Phone:{" "}
+          <a
+            href="tel:+919876543210"
+            className="text-white hover:underline"
+          >
+            +91-1234567890
+          </a>
           <div className="flex space-x-4 mt-3">
              <a href="#" className="hover:text-gray-300"><FaFacebookF /></a>
             <a href="#" className="hover:text-gray-300"><FaInstagram /></a>

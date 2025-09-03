@@ -5,14 +5,14 @@ const loans = [
     id: 1,
     title: "Personal Loan",
     desc: "Quick personal loans for your urgent needs with minimal documentation.",
-    link: "https://fts.firsttracksolutiontechnologies.com/loan/apply",
+    link: "https://fts.firsttracksolutiontechnologies.com/loan/apply/personal",
     readMore: "https://fts.firsttracksolutiontechnologies.com/loan-details/personal",
   },
   {
     id: 2,
     title: "Business Loan",
     desc: "Grow your business with instant capital and easy repayment options.",
-    // link: "https://fts.firsttracksolutiontechnologies.com/loan/apply",
+     link: "https://fts.firsttracksolutiontechnologies.com/loan/apply/business",
     readMore: "https://fts.firsttracksolutiontechnologies.com/loan-details/business",
   },
 ];

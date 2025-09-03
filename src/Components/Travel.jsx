@@ -9,7 +9,7 @@ export default function Travel() {
     { title: "Flight", icon: <FaPlane size={40} className="text-yellow-500"/>, link:"/flight" },
     { title: "Luxury Hotels", icon: <FaHotel size={40} className="text-green-600"/>, link:"/hotel" },
     { title: "Car Rentals", icon: <FaCar size={40} className="text-blue-500"/>, link:"/rental-car" },
-    { title: "Rewards & Cashback", icon: <FaGift size={40} className="text-red-500" />, link: "/cashback" },
+    { title: "Rewards & Cashback", icon: <FaGift size={40} className="text-red-500" />, link: "/rewards" },
   ];
 
     const [showAll, setShowAll] = useState(false);
