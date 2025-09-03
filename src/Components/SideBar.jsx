@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaHome, FaInfoCircle, FaBlog, FaEnvelope, FaSignInAlt  } from "react-icons/fa";
+import { FaHome, FaInfoCircle, FaBlog, FaCompass, FaEnvelope, FaSignInAlt  } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
 
 const SideBar = ({isOpen, toggleSideBar}) => {
@@ -41,6 +41,15 @@ return (
         >
             <FaBlog /> Blog
         </Link>
+        <Link
+            to="/explore"
+            className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500"
+             onClick={toggleSideBar}
+        >
+            <FaCompass /> Explore
+        </Link>
+
+
         <Link
             to="/contact"
             className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500"

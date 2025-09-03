@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar"
 import SideBar from "./Components/SideBar"
-import Home from "./Pages/Home"
+import Home from "./Pages/Home";
+import Explore from "./Pages/Explore";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import Payment from "./Pages/Payment";
@@ -19,9 +20,10 @@ import Hotel from "./Pages/Hotel";
 import Cashback from "./Pages/Cashback";
 import RentalCar from "./Pages/RentalCar";
 import Loan from "./Pages/Loan";
-
-// import PersonalLoan from "./Pages/PersonalLoan";
-// import BusinessLoan from "./Pages/BusinessLoan";
+import LoanDetails from "./Pages/LoanDetails";
+import LoanApply from "./Pages/LoanApply";
+import PersonalLoan from "./Pages/PersonalLoan";
+import BusinessLoan from "./Pages/BusinessLoan";
 import GoldLoan from "./Pages/GoldLoan";
 import GoldSip from "./Pages/GoldSip";
 import Insurance from "./Pages/Insurance";
@@ -58,6 +60,7 @@ function App() {
       <main className="min-h-[80vh] px-6 pt-16">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/explore" element={<Explore />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
@@ -73,9 +76,10 @@ function App() {
           <Route path="/cashback" element={<Cashback />} />
           <Route path="/rental-car" element={<RentalCar />} />
           <Route path="/loan" element={<Loan />} />
-
-          {/* <Route path="/job-consulting/loan" element={<PersonalLoan />} />
-          <Route path="/job-consulting/loan" element={<BusinessLoan />} /> */}
+          <Route path="/loan/apply" element={<LoanApply />} />
+          <Route path="/loan-details/:loanType" element={<LoanDetails />} />
+          <Route path="/loan/apply/personal" element={<PersonalLoan />} />
+          <Route path="/loan/apply/business" element={<BusinessLoan />} />
           <Route path="/gold-loan" element={<GoldLoan />} />
           <Route path="/gold-sip" element={<GoldSip />} />
           <Route path="/insurance" element={<Insurance />} />

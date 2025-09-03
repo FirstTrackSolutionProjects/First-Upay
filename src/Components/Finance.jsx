@@ -1,14 +1,19 @@
 import { FaUniversity, FaCoins, FaShieldAlt, FaCrown } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Finance() {
+  const [showAll, setShowAll] = useState(false);
   const options = [
     { title: "Instant Loan", icon: <FaUniversity size={40} className="text-indigo-600" />, link: "/loan" },
-    { title: "Invest in Gold", icon: <FaCoins size={40} className="text-yellow-500" />, link: "/gold-loan" },
+    { title: "Gold Loan", icon: <FaCoins size={40} className="text-yellow-500" />, link: "/gold-loan" },
     { title: "Insurance", icon: <FaShieldAlt size={40} className="text-green-600" />, link: "/insurance" },
     { title: "Monthly Gold SIP", icon: <FaCrown size={42} className="text-amber-500" />, link: "/gold-sip", highlight: true },
+    { title: "Invest in Gold", icon: <FaCoins size={40} className="text-blue-600" />, link: "/mutual-funds" },
   
   ];
+
+    const visibleOptions = showAll ? options : options.slice(0, 4);
 
   return (
     <div className="w-full flex flex-col items-center  py-10 px-4">
@@ -23,7 +28,7 @@ export default function Finance() {
 
       {/* Grid Options */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-        {options.map((opt, index) => (
+        {visibleOptions.map((opt, index) => (
           <Link
             key={index}
             to={opt.link}
@@ -36,13 +41,15 @@ export default function Finance() {
         ))}
       </div>
 
-      {/* Button */}
-      {/* <Link
-        to="/finance-explore"
-        className="mt-8 bg-indigo-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-indigo-700 transition flex items-center gap-2"
-      >
-        Explore Finance →
-      </Link> */}
+        {/* Show More / Show Less Button */}
+      {options.length > 4 && (
+        <button
+          onClick={() => setShowAll(!showAll)}
+          className="mt-6 bg-indigo-600 text-white px-6 py-2 rounded-full shadow hover:bg-indigo-700 transition"
+        >
+          {showAll ? "Show Less" : "Show More"}
+        </button>
+      )}
     </div>
   );
 }

@@ -26,7 +26,7 @@ const features = [
   },
   {
     id: 4,
-    title: "Loan Services",
+    title: "Loan",
     description: "Apply for personal & business loans",
     icon: <FaUniversity className="w-10 h-10 text-green-600" />,
     link: "/loan",
