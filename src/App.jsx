@@ -39,6 +39,14 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import Terms from "./Pages/Terms";
 import RefundCancellation from "./Pages/RefundCancellation";
 import Support from "./Pages/Support";
+import BankTransfer from "./Pages/BankTransfer";
+import UpiTransfer from "./Pages/UpiTransfer";
+import Fee from "./Pages/Fee";
+import ReferandEarn from "./Pages/ReferandEarn";
+import InvestGold from "./Pages/InvestGold";
+import TravelPage from "./Pages/TravelPage";
+import SavingSection from "./Pages/SavingSection";
+import SmartSaving from "./Pages/SmartSaving";
 import Footer from "./Components/Footer"
 
 
@@ -50,6 +58,8 @@ function App() {
     setIsSideBarOpen(!isSideBarOpen);
   };
 
+    const noFooterPages = ["/explore"];
+
   return (
     <>
     <div className="fixed top-0 left-0 w-full z-40">
@@ -57,7 +67,8 @@ function App() {
     </div>
      <SideBar isOpen={isSideBarOpen} toggleSideBar={toggleSideBar} />
 
-      <main className="min-h-[80vh] px-6 pt-16">
+      <main className="min-h-[80vh] pt-16 px-4 md:px-8">
+         <div className="max-w-7xl mx-auto">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
@@ -65,10 +76,16 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/recharge" element={<Recharge />} />
+          <Route path="/bank" element={<BankTransfer />} />
+          <Route path="/upi" element={<UpiTransfer />} />
+          <Route path="/fees" element={<Fee />} />
+          <Route path="/refer" element={<ReferandEarn />} />
+          <Route path="/invest-gold" element={<InvestGold />} />
           <Route path="/dth-recharge" element={<DthRecharge />} />
           <Route path="/electricity-bill" element={<ElectricityBill />} />
           <Route path="/fastag" element={<FasTag />} />
           <Route path="/bills" element={<Bill />} />
+          <Route path="/travel" element={<TravelPage />} />
           <Route path="/bus" element={<Bus />} />
           <Route path="/train" element={<Train />} />
           <Route path="/flight" element={<Flight />} />
@@ -80,6 +97,8 @@ function App() {
           <Route path="/loan-details/:loanType" element={<LoanDetails />} />
           <Route path="/loan/apply/personal" element={<PersonalLoan />} />
           <Route path="/loan/apply/business" element={<BusinessLoan />} />
+          <Route path="/saving" element={<SavingSection />} />
+          <Route path="/smart-savings" element={<SmartSaving />} />
           <Route path="/gold-loan" element={<GoldLoan />} />
           <Route path="/gold-sip" element={<GoldSip />} />
           <Route path="/insurance" element={<Insurance />} />
@@ -101,8 +120,12 @@ function App() {
           
 
           </Routes>
+          </div>
       </main>
+
+      {!noFooterPages.includes(window.location.pathname) &&
       <Footer/>
+      }
 
       
     </>

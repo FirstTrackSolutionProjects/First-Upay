@@ -1,4 +1,8 @@
 import { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 
 
@@ -38,52 +42,26 @@ const slides = [
 ];
 
 const HeroSection = () => {
-  const [current, setCurrent] = useState(0);
-  const [startX, setStartX] = useState(0);
-  const [endX, setEndX] = useState(0);
+  
 
-  // Auto slide every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
-
-  // Handle touch/mouse drag end
-  const handleSwipe = () => {
-    const distance = endX - startX;
-    if (distance > 50) {
-      // Swipe Right -> Previous Slide
-      setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
-    } else if (distance < -50) {
-      // Swipe Left -> Next Slide
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }
-  };
 
   return (
       <section
-      className="relative w-full h-[60vh] overflow-hidden mt-6"
-      onTouchStart={(e) => setStartX(e.touches[0].clientX)}
-      onTouchEnd={(e) => {
-        setEndX(e.changedTouches[0].clientX);
-        handleSwipe();
-      }}
-      onMouseDown={(e) => setStartX(e.clientX)}
-      onMouseUp={(e) => {
-        setEndX(e.clientX);
-        handleSwipe();
-      }}
-    >
-      {/* Slides */}
-      <div
-        className="flex transition-transform duration-700 ease-in-out h-full"
-        style={{ transform: `translateX(-${current * 100}%)` }}
+      className="relative w-full h-[60vh] overflow-hidden mt-6">
+      <Swiper
+        modules={[Autoplay]}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+      
+        spaceBetween={0}
+        slidesPerView={1}
+        loop={true}
+        grabCursor={true}
+        className="h-full"
       >
+     
         {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
           <div
-            key={slide.id}
             className={`flex-shrink-0 w-full h-full bg-gradient-to-r ${slide.bg} text-white flex flex-col justify-center items-center text-center px-6`}
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-4">{slide.title}</h1>
@@ -103,8 +81,9 @@ const HeroSection = () => {
               </Link>
             </div>
           </div>
+        </SwiperSlide>
         ))}
-      </div>
+     </Swiper>
     </section>
   );
 };

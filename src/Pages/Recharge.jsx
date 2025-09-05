@@ -91,18 +91,19 @@
 // export default Recharge;
 
 import { Link } from "react-router-dom";
-import { FaMobileAlt, FaBolt, FaUniversity, FaBroadcastTower, FaGasPump, FaTv, FaGooglePlay, FaRegCreditCard, FaShieldAlt } from "react-icons/fa";
+import { FaMobileAlt, FaBolt, FaBroadcastTower, FaGasPump, FaSatelliteDish, FaGooglePlay, FaRegCreditCard, FaShieldAlt } from "react-icons/fa";
 
 export default function Recharge() {
   const rechargeItems = [
-    { name: "Credit Card Bill", icon: <FaRegCreditCard size={28} className="text-indigo-600" />, link: "/recharge/credit-card" },
-    { name: "Insurance / LIC", icon: <FaShieldAlt size={28} className="text-blue-600" />, link: "/recharge/insurance" },
-    { name: "Mobile Postpaid", icon: <FaMobileAlt size={28} className="text-orange-600" />, link: "/recharge/postpaid" },
-    { name: "Broadband Landline", icon: <FaBroadcastTower size={28} className="text-green-600" />, link: "/recharge/broadband" },
-    { name: "Piped Gas Bill", icon: <FaGasPump size={28} className="text-teal-600" />, link: "/recharge/gas" },
-    { name: "Book Gas Cylinder", icon: <FaGasPump size={28} className="text-red-600" />, link: "/recharge/cylinder" },
-    { name: "DTH Recharge", icon: <FaTv size={28} className="text-purple-600" />, link: "/recharge/dth" },
-    { name: "Google Play Recharge", icon: <FaGooglePlay size={28} className="text-pink-600" />, link: "/recharge/google-play" },
+    { name: "Credit Card Bill", icon: <FaRegCreditCard size={28} className="text-indigo-600" />, link: "/credit-card" },
+    { name: "Insurance / LIC", icon: <FaShieldAlt size={28} className="text-blue-600" />, link: "/insurance" },
+    { name: "Mobile Postpaid", icon: <FaMobileAlt size={28} className="text-orange-600" />, link: "/postpaid" },
+    { name: "Fastag Recharge", icon: <FaBolt size={28} className="text-yellow-500" />, link: "/fastag" },
+    { name: "Broadband Landline", icon: <FaBroadcastTower size={28} className="text-green-600" />, link: "/broadband" },
+    { name: "Electricity Bill", icon: <FaBolt size={28} className="text-red-600" />, link: "/electricity-bill" },
+    { name: "Book Gas Cylinder", icon: <FaGasPump size={28} className="text-red-600" />, link: "/cylinder" },
+    { name: "DTH Recharge", icon: <FaSatelliteDish size={28} className="text-purple-600" />, link: "/dth-recharge" },
+    { name: "Google Play Recharge", icon: <FaGooglePlay size={28} className="text-pink-600" />, link: "/google-play" },
   ];
 
   return (
