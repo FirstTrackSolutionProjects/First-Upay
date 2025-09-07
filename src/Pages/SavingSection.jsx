@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPiggyBank, FaCoins, FaRupeeSign, FaChartLine } from "react-icons/fa";
+import { FaWallet, FaCoins, FaRupeeSign, FaChartLine } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const SavingSection = () => {
@@ -9,7 +9,7 @@ const SavingSection = () => {
     {
       title: "Smart Savings",
       desc: "Start saving daily with flexible plans",
-      icon: <FaPiggyBank className="text-yellow-500 text-3xl" />,
+      icon: <FaWallet className="text-yellow-500 text-3xl" />,
       link: "/smart-savings",
     },
     {
@@ -34,7 +34,7 @@ const SavingSection = () => {
 
   return (
     <section className="bg-orange-200 text-black py-8 px-4 m-3 rounded-2xl shadow-lg">
-      <h2 className="text-xl font-bold mb-2">Smart Finance</h2>
+      <h2 className="text-xl font-bold mb-2">Gold Investment</h2>
       <p className="text-black text-sm mb-6">
         Save, invest and grow with our smart financial products.
       </p>

@@ -6,7 +6,7 @@ import {
   FaWallet,
   FaPiggyBank,
   FaShieldAlt,
-  FaPlane,
+  FaPlane, FaBalanceScale,
   FaMoneyBillWave, FaSatelliteDish,
   FaCoins, FaReceipt,
   FaGift, FaMedal, FaHandHoldingUsd
@@ -41,15 +41,17 @@ export default function FinanceDashboard() {
   ];
      
 const compactItems = [
-    { name: "Instant Loan", icon: <FaHandHoldingUsd size={36} className="text-indigo-600" />, link: "/loan" },
-    { name: "Gold Loan", icon: <FaCoins size={36} className="text-yellow-500" />, link: "/saving" },
+    { name: "Instant Loan", icon: <FaHandHoldingUsd size={36} className="text-indigo-600" />, link: "/instant-loan" },
+    { name: "Gold", icon: <FaCoins size={36} className="text-yellow-500" />, link: "/saving" },
     { name: "Insurance", icon: <FaShieldAlt size={36} className="text-green-600" />, link: "/insurance" },
     { name: "Travel", icon: <FaPlane size={36}
     className="text-red-600" />, link: "/travel" },
-    {
-      name: "Rewards", icon: <FaMedal size={36} className="text-blue-600" />, link: "/rewards" },
+    { name: "Mutual Funds", icon: <FaBalanceScale size={36} className="text-orange-600" />, link: "/mutual-funds" },
+    // {
+    //   name: "Rewards", icon: <FaMedal size={36} className="text-blue-600" />, link: "/rewards" },
     { name: "Refer & Earn", icon: <FaGift size={36}
       className="text-pink-600" />, link: "/refer" },
+    
 
   ];
 

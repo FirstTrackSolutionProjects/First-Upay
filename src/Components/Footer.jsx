@@ -57,8 +57,10 @@ const Footer = () => {
 
       </div>
 
+      <hr/>
+
       <div className="border-t border-indigo-500 text-center py-4 text-sm text-gray-200">
-        © {new Date().getFullYear()} First Track Solution Technologies Private Limited. All rights reserved.
+        Copyright © {new Date().getFullYear()} First Track Solution Technologies Private Limited. All rights reserved.
       </div>
     </footer>
   );

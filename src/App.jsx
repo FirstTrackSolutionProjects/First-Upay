@@ -47,6 +47,14 @@ import InvestGold from "./Pages/InvestGold";
 import TravelPage from "./Pages/TravelPage";
 import SavingSection from "./Pages/SavingSection";
 import SmartSaving from "./Pages/SmartSaving";
+import InstantLoan from "./Pages/InstantLoan";
+import MutualFunds from "./Pages/MutualFunds";
+import BestSip from "./Pages/BestSip";
+import FundsDetail from "./Pages/FundsDetail";
+import Wallet from "./Pages/Wallet";
+import UpiQuickpay from "./Pages/UpiQuickpay";
+import RuPayUpi from "./Pages/RuPayUpi";
+import CreditCard from "./Pages/CreditCard";
 import Footer from "./Components/Footer"
 
 
@@ -97,8 +105,12 @@ function App() {
           <Route path="/loan-details/:loanType" element={<LoanDetails />} />
           <Route path="/loan/apply/personal" element={<PersonalLoan />} />
           <Route path="/loan/apply/business" element={<BusinessLoan />} />
+          <Route path="/instant-loan" element={<InstantLoan />} />
           <Route path="/saving" element={<SavingSection />} />
           <Route path="/smart-savings" element={<SmartSaving />} />
+          <Route path="/mutual-funds" element={<MutualFunds />} />
+          <Route path="/sip-funds" element={<BestSip />} />
+          <Route path="/funds/:id" element={<FundsDetail />} />
           <Route path="/gold-loan" element={<GoldLoan />} />
           <Route path="/gold-sip" element={<GoldSip />} />
           <Route path="/insurance" element={<Insurance />} />
@@ -108,6 +120,10 @@ function App() {
           <Route path="/insurance/accidental" element={<AccidentalInsurance />} />
           <Route path="/emi-calculator" element={<EMICalculator />} />
           <Route path="/rewards" element={<Reward />} />
+          <Route path="/wallet" element={<Wallet />} />
+          <Route path="/upi-lite" element={<UpiQuickpay />} />
+          <Route path="/rupay-upi" element={<RuPayUpi />} />
+          <Route path="/credit-card" element={<CreditCard />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<ContactUs />} />

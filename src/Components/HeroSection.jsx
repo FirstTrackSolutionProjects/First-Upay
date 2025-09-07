@@ -35,7 +35,7 @@ const slides = [
     id: 4,
     title: "Instant Loan & EMI Calculator 📅",
     desc: "Get small loans and credit instantly with flexible repayment options.",
-    btn1: { text: "💳 Apply Loan", link: "/loan" },
+    btn1: { text: "💳 Apply Loan", link: "/instant-loan" },
     btn2: { text: "📊 EMI Calculator", link: "/emi-calculator" },
     bg: "from-purple-600 to-fuchsia-400",
   },

@@ -1,0 +1,62 @@
+import React from "react";
+
+const creditCards = [
+  { name: "HDFC Credit Card", logo: "https://upload.wikimedia.org/wikipedia/en/8/8e/HDFC_Bank_Logo.svg" },
+  { name: "SBI Credit Card", logo: "https://seeklogo.com/images/S/sbi-card-logo-0DC5B9C07D-seeklogo.com.png" },
+  { name: "Axis Bank Credit Card", logo: "https://seeklogo.com/images/A/axis-bank-logo-0B8B79BA54-seeklogo.com.png" },
+  { name: "ICICI Credit Card", logo: "https://seeklogo.com/images/I/icici-bank-logo-7F0F5C7E5B-seeklogo.com.png" },
+  { name: "Bank of Baroda Credit Card", logo: "https://seeklogo.com/images/B/bank-of-baroda-logo-48D2E8A6DA-seeklogo.com.png" },
+  { name: "Kotak Mahindra Credit Card", logo: "https://seeklogo.com/images/K/kotak-mahindra-bank-logo-EE0F31275E-seeklogo.com.png" },
+  { name: "Yes Bank Credit Card", logo: "https://seeklogo.com/images/Y/yes-bank-logo-4734986A16-seeklogo.com.png" },
+  { name: "Union Bank Credit Card", logo: "https://seeklogo.com/images/U/union-bank-of-india-logo-6FA45EAB8C-seeklogo.com.png" },
+  { name: "PNB Credit Card", logo: "https://seeklogo.com/images/P/punjab-national-bank-logo-19EED62AB7-seeklogo.com.png" },
+];
+
+const CreditCard = () => {
+  return (
+    <div className="min-h-screen bg-gray-100 text-gray-900 p-4">
+     
+
+      {/* Banner */}
+      <div className="bg-indigo-100 rounded-xl p-5 mb-6 text-center border border-indigo-200 shadow-sm">
+        <h2 className="text-xl font-bold text-indigo-700">Manage Your Credit Cards</h2>
+        <p className="text-sm text-gray-600 mt-1">
+          Link, scan, and pay with your credit cards to enjoy rewards & cashback
+        </p>
+        <button className="mt-3 text-sm font-medium text-indigo-600 hover:text-indigo-800 underline">
+          Learn more →
+        </button>
+      </div>
+
+      {/* Search */}
+      <div className="mb-5">
+        <h3 className="font-semibold mb-2">Add a Credit Card</h3>
+        <input
+          type="text"
+          placeholder="Search by bank name"
+          className="w-full p-3 rounded-lg border border-gray-300 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        />
+      </div>
+
+      {/* Popular Credit Cards */}
+      <h3 className="font-semibold mb-3">Popular Credit Cards</h3>
+      <div className="grid grid-cols-3 gap-4">
+        {creditCards.map((card, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center bg-white border border-gray-200 rounded-lg p-3 cursor-pointer shadow-sm hover:shadow-md transition"
+          >
+            <img
+              src={card.logo}
+              alt={card.name}
+              className="w-10 h-10 object-contain mb-2"
+            />
+            <p className="text-xs text-center text-gray-700">{card.name}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default CreditCard;

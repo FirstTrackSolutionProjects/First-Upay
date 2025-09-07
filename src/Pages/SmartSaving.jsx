@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { FaArrowLeft } from "react-icons/fa";
+
 
 export default function SmartSavings() {
   const [amount, setAmount] = useState(30);
 
-  const quickAmounts = [10, 30, 40];
+  const quickAmounts = [10, 30, 50];
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col">
@@ -36,18 +36,22 @@ export default function SmartSavings() {
         </p>
         <input
           type="number"
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
+          value={amount}     
+           min={10} 
+            onChange={(e) => {
+                const val = Number(e.target.value);
+                setAmount(val < 10 ? 10 : val); 
+            }}
           className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-lg focus:ring-2 focus:ring-teal-500 focus:outline-none"
         />
 
         {/* Quick Amounts */}
-        <div className="flex gap-3 mt-4">
+        <div className="flex gap-3 mt-4 ">
           {quickAmounts.map((amt, idx) => (
             <button
               key={idx}
               onClick={() => setAmount(amt)}
-              className={`px-6 py-2 rounded-lg font-semibold border transition ${
+              className={`px-6 py-2 rounded-lg font-semibold border transition  ${
                 amount == amt
                   ? "bg-teal-600 border-teal-600 text-white"
                   : "border-teal-400 text-teal-600 hover:bg-teal-50"

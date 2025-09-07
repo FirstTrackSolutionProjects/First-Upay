@@ -13,7 +13,7 @@ export default function InvestGold() {
   // Convert rupees <-> grams
   const grams = (amount / goldRate).toFixed(4);
 
-  const quickAmounts = [100, 500, 1500, 5000];
+  const quickAmounts = [100, 500, 1000, 2000, 3000, 5000];
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col">
@@ -66,8 +66,12 @@ export default function InvestGold() {
               <input
                 type="number"
                 value={amount}
-                onChange={(e) => setAmount(Number(e.target.value))}
-                className="bg-transparent outline-none w-24 text-gray-900"
+                min={100}
+                onChange={(e) => {
+                const val = Number(e.target.value);
+                setAmount(val < 100 ? 100 : val); 
+            }}
+                    className="bg-transparent outline-none w-24 text-gray-900"
               />
               <span className="text-gray-600">= {grams}g</span>
             </>
@@ -76,9 +80,11 @@ export default function InvestGold() {
               <input
                 type="number"
                 value={grams}
-                onChange={(e) =>
-                  setAmount(Number(e.target.value) * goldRate)
-                }
+                min={(100 / goldRate).toFixed(4)}
+                onChange={(e) => {
+                   const val = Number(e.target.value);
+                    setAmount(val * goldRate < 100 ? 100 : val * goldRate); // 👈 validation
+                }}
                 className="bg-transparent outline-none w-24 text-gray-900"
               />
               <span className="text-gray-600">₹{amount.toFixed(0)}</span>
@@ -105,7 +111,7 @@ export default function InvestGold() {
                 setMode("rupees");
                 setAmount(amt);
               }}
-              className={`px-6 py-2 rounded-md border font-semibold transition ${
+              className={`w-24 px-6 py-2 rounded-md border font-semibold transition ${
                 amount === amt
                   ? "bg-emerald-600 border-emerald-600 text-white"
                   : "border-emerald-500 text-emerald-600 hover:bg-emerald-50"
