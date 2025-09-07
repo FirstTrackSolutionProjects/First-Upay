@@ -53,7 +53,7 @@ import BestSip from "./Pages/BestSip";
 import FundsDetail from "./Pages/FundsDetail";
 import Wallet from "./Pages/Wallet";
 import UpiQuickpay from "./Pages/UpiQuickpay";
-import RuPayUpi from "./Pages/RuPayUpi";
+import RuPayUpi from "./Pages/RupayUpi";
 import CreditCard from "./Pages/CreditCard";
 import Footer from "./Components/Footer"
 
