@@ -28,8 +28,8 @@ const Wallet = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center px-4 py-6">
-      <h1 className="text-xl font-bold text-gray-800 mb-2">
+    <div className="min-h-screen bg-sky-100 flex flex-col items-center p-4 m-4">
+      <h1 className="text-xl font-extrabold text-gray-800 mb-2">
         Choose Your Wallet
       </h1>
       <p className="text-sm text-gray-600 mb-6">

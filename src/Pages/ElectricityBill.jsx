@@ -1,85 +1,105 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { FaSearch } from "react-icons/fa";
 
-const states = ["Delhi", "Maharashtra", "Uttar Pradesh", "Karnataka", "Tamil Nadu"];
+export default function Bill() {
+  const [billers] = useState([
+    { name: "India Power Prepaid Meter", tag: "New" },
+    { name: "TP Central Odisha Distribution Ltd (TPCODL)" },
+    { name: "TP Northern Odisha Distribution Ltd (TPNODL)" },
+    { name: "TP Southern Odisha Distribution Ltd (TPSODL)" },
+    { name: "TP Southern Odisha Distribution Ltd (TPSODL) - Prepaid Recharge" },
+  ]);
 
-const ElectricityBill = () => {
-  const [consumerNumber, setConsumerNumber] = useState("");
-  const [state, setState] = useState("");
-  const [amount, setAmount] = useState("");
-
-  const handlePay = (e) => {
-    e.preventDefault();
-    if (!consumerNumber || !state || !amount) {
-      alert("Please fill all details!");
-      return;
-    }
-    alert(`Electricity bill of ₹${amount} for Consumer No. ${consumerNumber} (${state}) is being processed ✅`);
-  };
+  const [allBillers] = useState([
+    { name: "Adani Electricity Mumbai Limited (AEML)" },
+    { name: "Ajmer Vidyut Vitran Nigam Ltd (AVVNL)" },
+    { name: "Assam Power Distribution Company Ltd (APDCL) - Bill Payment" },
+    { name: "Assam Power Distribution Company Ltd (APDCL) - Prepaid Recharge" },
+  ]);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-100 px-4">
-      {/* Image */}
-       <div className="w-full md:w-1/2 flex justify-center m-4">
-        <img
-          src="/images/electricity bill.jpg" 
-          alt="Electricity Bill Illustration"
-          className="w-full h-80 object-cover"
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white p-4">
+      {/* Header */}
+      <div className="flex items-center gap-3 mb-4">
+        <h1 className="text-lg font-extrabold text-gray-800">Select Provider</h1>
+      </div>
+
+      {/* Search */}
+      <div className="flex items-center bg-white shadow-md rounded-full px-4 py-2 mb-6">
+        <FaSearch className="text-gray-400" />
+        <input
+          type="text"
+          placeholder="Search by biller"
+          className="ml-2 flex-1 outline-none text-sm"
         />
       </div>
 
-    <div className="w-full mx-auto p-6 bg-white shadow-lg rounded-2xl mt-8">
-      <h2 className="text-2xl font-bold text-center mb-6 text-indigo-600">
-        Electricity Bill Payment
-      </h2>
-      <form onSubmit={handlePay} className="space-y-4">
-        <div>
-          <label className="block font-medium mb-1">Consumer Number</label>
-          <input
-            type="text"
-            value={consumerNumber}
-            onChange={(e) => setConsumerNumber(e.target.value)}
-            placeholder="Enter Consumer Number"
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-          />
-        </div>
-
-        <div>
-          <label className="block font-medium mb-1">Select State</label>
-          <select
-            value={state}
-            onChange={(e) => setState(e.target.value)}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-          >
-            <option value="">-- Choose State --</option>
-            {states.map((s, idx) => (
-              <option key={idx} value={s}>
-                {s}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div>
-          <label className="block font-medium mb-1">Bill Amount</label>
-          <input
-            type="number"
-            value={amount}
-            onChange={(e) => setAmount(e.target.value)}
-            placeholder="Enter amount"
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none"
-          />
-        </div>
-
-        <button
-          type="submit"
-          className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
-        >
-          Pay Bill
+      {/* Reminder Card */}
+      <div className="bg-blue-100 p-4 rounded-2xl shadow-sm mb-6">
+        <h2 className="text-gray-800 font-medium">
+          Avoid missed bill payments and overdue charges
+        </h2>
+        <p className="text-xs text-gray-600 mt-1">
+          Allow access to your text messages to fetch your bills and remind on
+          time.
+        </p>
+        <button className="mt-3 bg-blue-600 text-white text-sm px-4 py-2 rounded-lg">
+          Allow
         </button>
-      </form>
-    </div>
-</div>
-  );
-};
+      </div>
 
-export default ElectricityBill;
+      {/* Billers in Odisha */}
+      <div className="mb-8">
+        <h2 className="text-gray-800 font-semibold mb-3">Billers in Odisha</h2>
+        <div className="space-y-3">
+          {billers.map((item, i) => (
+            <div
+              key={i}
+              className="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-blue-100 flex items-center justify-center rounded-full">
+                  <span className="text-blue-600 font-bold">
+                    {item.name[0]}
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-medium text-gray-800">{item.name}</h3>
+                  {item.tag && (
+                    <span className="text-xs text-red-500 font-semibold bg-red-100 px-2 py-0.5 rounded ml-2">
+                      {item.tag}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* All Billers */}
+      <div>
+        <h2 className="text-gray-800 font-semibold mb-3">All Billers</h2>
+        <div className="space-y-3">
+          {allBillers.map((item, i) => (
+            <div
+              key={i}
+              className="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-green-100 flex items-center justify-center rounded-full">
+                  <span className="text-green-600 font-bold">
+                    {item.name[0]}
+                  </span>
+                </div>
+                <div>
+                  <h3 className="font-medium text-gray-800">{item.name}</h3>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

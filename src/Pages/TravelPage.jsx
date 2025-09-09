@@ -10,12 +10,12 @@ export default function TravelPage() {
     { title: "Flight", icon: <FaPlane size={40} className="text-red-500"/>, link:"/flight",
         subtitle: "Search and book flights worldwide"
  },
-    { title: "Hotel", icon: <FaHotel size={40} className="text-yellow-500"/>, link:"/hotel",
-        subtitle: "Discover and book hotels easily"
- },
-    { title: "Car Rental", icon: <FaCar size={40} className="text-purple-600"/>, link:"/rental-car",
-        subtitle: "Rent cars at your destination"
-},
+//     { title: "Hotel", icon: <FaHotel size={40} className="text-yellow-500"/>, link:"/hotel",
+//         subtitle: "Discover and book hotels easily"
+//  },
+//     { title: "Car Rental", icon: <FaCar size={40} className="text-purple-600"/>, link:"/rental-car",
+//         subtitle: "Rent cars at your destination"
+// },
   ];
 
   return (

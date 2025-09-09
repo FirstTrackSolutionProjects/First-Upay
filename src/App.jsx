@@ -55,6 +55,16 @@ import Wallet from "./Pages/Wallet";
 import UpiQuickpay from "./Pages/UpiQuickpay";
 import RuPayUpi from "./Pages/RupayUpi";
 import CreditCard from "./Pages/CreditCard";
+import SendMoney from "./Pages/SendMoney";
+import SelfAccount from "./Pages/SelfAccount";
+import IFSC from "./Pages/IFSC";
+import Bank from "./Pages/Bank";
+import CheckBalance from "./Pages/CheckBalance";
+import ScanandPay from "./Pages/ScanandPay";
+import ReceiveMoney from "./Pages/ReceiveMoney";
+import PayRent from "./Pages/PayRent";
+import LoanRepayment from "./Pages/LoanRepayment";
+import Entertainment from "./Pages/Entertainment"
 import Footer from "./Components/Footer"
 
 
@@ -92,7 +102,7 @@ function App() {
           <Route path="/dth-recharge" element={<DthRecharge />} />
           <Route path="/electricity-bill" element={<ElectricityBill />} />
           <Route path="/fastag" element={<FasTag />} />
-          <Route path="/bills" element={<Bill />} />
+          <Route path="/bill" element={<Bill />} />
           <Route path="/travel" element={<TravelPage />} />
           <Route path="/bus" element={<Bus />} />
           <Route path="/train" element={<Train />} />
@@ -124,6 +134,21 @@ function App() {
           <Route path="/upi-lite" element={<UpiQuickpay />} />
           <Route path="/rupay-upi" element={<RuPayUpi />} />
           <Route path="/credit-card" element={<CreditCard />} />
+          <Route path="/send-money" element={<SendMoney />} />
+          <Route path="/self-account" element={<SelfAccount />} />
+          <Route path="/ifsc" element={<IFSC />} />
+
+            {/* ✅ Bank page with mode */}
+            <Route path="/add-bank" element={<Bank mode="self" />} />
+            <Route path="/receiver-bank" element={<Bank mode="receiver" />} />
+
+          <Route path="/balance" element={<CheckBalance />} />
+          <Route path="/scan" element={<ScanandPay />} />
+          <Route path="/receive" element={<ReceiveMoney />} />
+          <Route path="/rent" element={<PayRent />} />
+          <Route path="/repayment" element={<LoanRepayment />} />
+          <Route path="/entertainment" element={<Entertainment />} />
+
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<ContactUs />} />

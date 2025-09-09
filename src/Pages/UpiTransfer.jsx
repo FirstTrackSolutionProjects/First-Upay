@@ -5,16 +5,14 @@ export default function UpiTransfer() {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-gradient-to-b from-blue-50 to-blue-100 min-h-screen flex items-center justify-center px-4">
+    <div className="bg-gradient-to-b from-blue-100 to-blue-300 min-h-screen flex items-center justify-center px-4 m-4">
       {/* Card */}
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-6">
         {/* Header */}
         <h1 className="text-lg sm:text-xl font-semibold text-blue-800 mb-2">
           To new UPI ID/Number
         </h1>
-        <p className="text-sm text-gray-600 mb-6">
-          Enter any UPI ID or 8–9 digit UPI Number
-        </p>
+      
 
         {/* Input Section */}
         <div className="mb-6">
