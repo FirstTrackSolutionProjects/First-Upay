@@ -167,8 +167,6 @@ export default function FinanceDashboard() {
                   </span>
                 </Link>
               ))}
-
-            
             </div>
           </div>
         </div>
