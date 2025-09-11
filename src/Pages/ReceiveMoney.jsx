@@ -3,11 +3,11 @@ import { FaUniversity, FaShareAlt, FaDownload, FaHome } from "react-icons/fa";
 
 const ReceiveMoney = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 p-4">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 p-4 m-4">
       {/* Header */}
       <div className="flex items-center gap-2 mb-4">
        
-        <h1 className="text-lg font-semibold text-gray-700">Paytm</h1>
+        <h1 className="text-lg font-extrabold text-gray-700">Paytm</h1>
       </div>
 
       {/* Profile & QR */}
@@ -41,7 +41,7 @@ const ReceiveMoney = () => {
       <div className="bg-white/80 mt-4 rounded-xl shadow p-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <FaUniversity className="text-blue-600" />
-          <p className="text-sm text-gray-700">Bank Of India - 8353</p>
+          <p className="text-sm text-gray-700">Test</p>
         </div>
         <button className="text-blue-600 text-sm font-medium">Change Bank</button>
       </div>

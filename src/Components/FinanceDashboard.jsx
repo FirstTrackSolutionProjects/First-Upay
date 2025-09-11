@@ -3,12 +3,12 @@ import {
   FaMobileAlt,
   FaUniversity,
   FaBolt,
-  FaWallet,
-  FaPiggyBank,
-  FaShieldAlt,
-  FaPlane, FaBalanceScale,
+  FaWallet, FaCreditCard,
+  FaPiggyBank, FaPlane,
+  FaShieldAlt, FaArrowDown,
+  FaBalanceScale, FaClipboardList,
   FaMoneyBillWave, FaSatelliteDish,
-  FaCoins, FaReceipt,
+  FaCoins, FaReceipt, FaHome,
   FaGift, FaCar, FaHandHoldingUsd
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -25,9 +25,9 @@ export default function FinanceDashboard() {
         { name: "Wallet Topup", icon: <FaWallet size={28} className="text-orange-600" />, link: "/wallet" },
         { name: "Check Balance", icon: <FaPiggyBank size={28} className="text-pink-600" />, link: "/balance" },
         { name: "Scan & Pay", icon: <FaShieldAlt size={28} className="text-yellow-600" />, link: "/scan" },
-        { name: "Balance & History", icon: <FaReceipt size={28} className="text-red-600" />, link: "/send-money" },
-        { name: "Pay Rent", icon: <FaPlane size={28} className="text-blue-600" />, link: "/rent" },
-        { name: "Receive Money", icon: <FaCoins size={28} className="text-purple-600" />, link: "/receive" },
+        { name: "Balance & History", icon: <FaClipboardList size={28} className="text-red-600" />, link: "/send-money" },
+        { name: "Pay Rent", icon: <FaHome size={28} className="text-blue-600" />, link: "/rent" },
+        { name: "Receive Money", icon: <FaArrowDown size={28} className="text-purple-600" />, link: "/receive" },
       ],
     },
     {
@@ -37,7 +37,7 @@ export default function FinanceDashboard() {
         { name: "Mobile Recharge", icon: <FaMobileAlt size={28} className="text-purple-600" />, link: "/recharge" },
         { name: "Electricity Bill", icon: <FaBolt size={28} className="text-yellow-500" />, link: "/electricity-bill" },
         { name: "Loan RePayment", icon: <FaMoneyBillWave size={28} className="text-blue-600" />, link: "/repayment" },
-        { name: "Credit Card", icon: <FaReceipt size={28} className="text-red-600" />, link: "/credit-card" },
+        { name: "Credit Card", icon: <FaCreditCard size={28} className="text-red-600" />, link: "/credit-card" },
       ],
     },
   ];
@@ -58,8 +58,9 @@ export default function FinanceDashboard() {
     { name: "Electricity Bill", icon: <FaBolt size={28} className="text-yellow-500" />, link: "/electricity-bill" },
     { name: "Loan Payment", icon: <FaMoneyBillWave size={28} className="text-blue-600" />, link: "/repayment" },
     { name: "Wallet Topup", icon: <FaWallet size={28} className="text-orange-600" />, link: "/wallet" },
-    { name: "Credit Card", icon: <FaReceipt size={28} className="text-red-600" />, link: "/credit-card" },
+    { name: "Credit Card", icon: <FaCreditCard size={28} className="text-red-600" />, link: "/credit-card" },
     { name: "DTH Recharge", icon: <FaSatelliteDish size={28} className="text-indigo-600" />, link: "/dth-recharge" },
+
    
   ];
 
@@ -114,7 +115,7 @@ export default function FinanceDashboard() {
             <Link
               key={i}
               to={item.link}
-              className="w-28 h-36 sm:w-32 sm:h-40 lg:w-50 lg:h-48  
+              className="w-28 h-36 sm:w-32 sm:h-40 lg:w-80 lg:h-40  
               bg-white rounded-xl shadow-md flex flex-col items-center justify-center hover:shadow-lg transition"
             >
               {item.icon}

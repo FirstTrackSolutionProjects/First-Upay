@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { FaSearch } from "react-icons/fa";
-import { FaChevronDown } from "react-icons/fa";
+import { FaSearch, FaChevronDown, FaTimes } from "react-icons/fa";
 
 export default function LoanRepayment() {
   const [loanBillers] = useState([
@@ -8,10 +7,29 @@ export default function LoanRepayment() {
     { name: "Annapurna Finance Private Limited-MFI" },
     { name: "Bajaj Finance LTD" },
     { name: "Bandhan Bank Loan", tag: "New" },
+    { name: "HDFC Bank Retails Assets" },
+    { name: "DMI Finance" },
+    { name: "Muthoot Finance" },
+    { name: "Utkarsh Bank Loan Repayment" },
   ]);
 
+  // categories
+  const categories = [
+    "Microfinance Institutions (MFI)",
+    "Vehicle Loan",
+    "Gold Loan",
+    "Small Finance Bank",
+    "Consumer Loan",
+    "Bank",
+    "Home Loan",
+    "Others",
+  ];
+
+  // state for sheet
+  const [showFilter, setShowFilter] = useState(false);
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white p-4 text-gray-800">
+    <div className="relative min-h-screen bg-gradient-to-b from-blue-50 to-white p-4 text-gray-800">
       {/* Header */}
       <div className="flex items-center gap-3 mb-4">
         <h1 className="text-lg font-extrabold">Select your Lender</h1>
@@ -41,11 +59,14 @@ export default function LoanRepayment() {
         </button>
       </div>
 
-      {/* Filter */}
-      <div className="flex items-center justify-between bg-gray-100 px-4 py-2 rounded-lg mb-6 shadow-sm">
+      {/* Filter trigger */}
+      <button
+        onClick={() => setShowFilter(true)}
+        className="w-full flex items-center justify-between bg-gray-100 px-4 py-3 rounded-lg mb-6 shadow-sm"
+      >
         <span className="text-sm text-gray-700">Filter by category</span>
         <FaChevronDown className="text-gray-500" />
-      </div>
+      </button>
 
       {/* All Loan Billers */}
       <div>
@@ -59,9 +80,7 @@ export default function LoanRepayment() {
               <div className="flex items-center gap-3">
                 {/* Logo Circle */}
                 <div className="w-10 h-10 bg-blue-100 flex items-center justify-center rounded-full">
-                  <span className="text-blue-600 font-bold">
-                    {item.name[0]}
-                  </span>
+                  <span className="text-blue-600 font-bold">{item.name[0]}</span>
                 </div>
 
                 {/* Biller Name */}
@@ -78,6 +97,46 @@ export default function LoanRepayment() {
           ))}
         </div>
       </div>
+
+      {/* ===== Slide-up Filter Panel ===== */}
+      {showFilter && (
+        <>
+          {/* Backdrop */}
+          <div
+            onClick={() => setShowFilter(false)}
+            className="fixed inset-0 bg-black/30 backdrop-blur-sm z-40"
+          />
+
+          {/* Bottom Sheet */}
+          <div className="fixed left-0 right-0 bottom-0 z-50 bg-white rounded-t-2xl shadow-lg animate-slideUp max-h-[70vh] overflow-y-auto">
+            <div className="flex justify-between items-center p-4 border-b">
+              <h3 className="text-lg font-semibold text-gray-800">
+                Filter by category
+              </h3>
+              <button onClick={() => setShowFilter(false)}>
+                <FaTimes className="text-gray-600" />
+              </button>
+            </div>
+
+            <div className="divide-y">
+              {categories.map((cat, idx) => (
+                <label
+                  key={idx}
+                  className="flex items-center justify-between px-4 py-4 cursor-pointer hover:bg-gray-50"
+                >
+                  <span className="text-gray-700">{cat}</span>
+                  <input
+                    type="radio"
+                    name="category"
+                    value={cat}
+                    className="form-radio text-blue-600"
+                  />
+                </label>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }

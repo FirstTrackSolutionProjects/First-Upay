@@ -7,15 +7,15 @@ const Bank = ({ mode = "receiver" }) => {
   const [search, setSearch] = useState("");
 
   const popularBanks = [
-    { name: "State Bank of India", logo: "https://upload.wikimedia.org/wikipedia/commons/0/04/SBI-logo.svg" },
-    { name: "Punjab National Bank", logo: "https://upload.wikimedia.org/wikipedia/commons/5/5b/PNB_Logo.svg" },
-    { name: "Bank Of India", logo: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Bank_of_India_logo.svg" },
-    { name: "UCO Bank", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/UCO_Bank_logo.svg" },
-    { name: "Union Bank Of India", logo: "https://upload.wikimedia.org/wikipedia/commons/0/01/Union_Bank_of_India_logo.svg" },
-    { name: "Canara Bank", logo: "https://upload.wikimedia.org/wikipedia/commons/3/37/Canara_Bank_logo.svg" },
-    { name: "Axis Bank", logo: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Axis_Bank_logo.svg" },
-    { name: "HDFC Bank", logo: "https://upload.wikimedia.org/wikipedia/commons/1/13/HDFC_Bank_Logo.svg" },
-    { name: "Bank Of Baroda", logo: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Bank_of_Baroda_logo.svg" },
+    { name: "State Bank of India", logo: "/Bank/SBI.png" },
+    { name: "Punjab National Bank", logo: "/Bank/punjab.png" },
+    { name: "Bank Of India", logo: "/Bank/BOI.png" },
+    { name: "UCO Bank", logo: "/Bank/UCO.png" },
+    { name: "Union Bank Of India", logo: "/Bank/Union.png" },
+    { name: "Canara Bank", logo: "/Bank/Canara.png" },
+    { name: "Axis Bank", logo: "/Bank/Axis.png" },
+    { name: "HDFC Bank", logo: "/Bank/HDFC.png" },
+    { name: "Bank Of Baroda", logo: "/Bank/BOB.png" },
   ];
 
   const allBanks = [

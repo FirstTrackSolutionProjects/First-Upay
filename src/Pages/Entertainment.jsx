@@ -1,14 +1,34 @@
 export default function Entertainment() {
   const services = [
-    { name: "Netflix", desc: "Pay for your Netflix subscription" },
-    { name: "Amazon Prime Video", desc: "Renew your Prime Video membership" },
-    { name: "Disney+ Hotstar", desc: "Recharge Disney+ Hotstar easily" },
-    { name: "SonyLIV", desc: "Pay for SonyLIV subscription" },
-    { name: "Zee5", desc: "Enjoy movies & shows on Zee5" },
+    {
+      name: "Netflix",
+      desc: "Pay for your Netflix subscription",
+      img: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+    },
+    {
+      name: "Amazon Prime Video",
+      desc: "Renew your Prime Video membership",
+      img: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png",
+    },
+    {
+      name: "Disney+ Hotstar",
+      desc: "Recharge Disney+ Hotstar easily",
+      img: "/Social/Disney.png",
+    },
+    {
+      name: "SonyLIV",
+      desc: "Pay for SonyLIV subscription",
+      img: "/Social/sonyliv.jpg",
+    },
+    {
+      name: "Zee5",
+      desc: "Enjoy movies & shows on Zee5",
+      img: "/Social/zee5.jpeg",
+    },
   ];
 
   return (
-    <div className="p-8 max-w-4xl mx-auto bg-blue-200 m-4">
+    <div className="p-8 max-w-4xl mx-auto bg-blue-200 m-4 rounded-2xl">
       {/* Header */}
       <h1 className="text-3xl font-bold mb-4">Entertainment Payments</h1>
       <p className="text-gray-600 mb-6">
@@ -20,8 +40,14 @@ export default function Entertainment() {
         {services.map((service, i) => (
           <div
             key={i}
-            className="bg-white p-6 rounded-xl shadow hover:shadow-md transition cursor-pointer"
+            className="bg-white p-6 rounded-xl shadow hover:shadow-md transition cursor-pointer flex flex-col items-center text-center"
           >
+            {/* Service Image */}
+            <img
+              src={service.img}
+              alt={service.name}
+              className="h-16 mb-4 object-contain"
+            />
             <h2 className="text-xl font-semibold text-gray-800">
               {service.name}
             </h2>

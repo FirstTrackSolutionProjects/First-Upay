@@ -43,7 +43,7 @@ const slides = [
   id: 5,
   title: "Invest in Gold 🪙",
   desc: "Secure your future by investing in digital gold with flexible plans.",
-  btn1: { text: "✨ Smart saving", link: "/smart-saving" },
+  btn1: { text: "✨ Smart savings", link: "/smart-savings" },
   btn2: { text: "📈 Gold-SIP", link: "/invest-gold" },
   bg: "from-yellow-600 to-amber-300",
 },

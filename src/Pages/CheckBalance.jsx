@@ -81,7 +81,7 @@ if (!authenticated) {
           <div className="flex items-center gap-2">
             <Wallet className="w-5 h-5 text-gray-500" />
             <div>
-              <p className="font-medium">PhonePe Wallet</p>
+              <p className="font-medium">First Upay Wallet</p>
               <p className="text-sm text-gray-500">Balance: ₹0</p>
             </div>
           </div>

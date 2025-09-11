@@ -1,6 +1,6 @@
 import { 
   Lightbulb, Smartphone, Tv, 
-  CreditCard, Wallet, Banknote, Car, Film, 
+  CreditCard, Wallet, Banknote, Car, Film, GraduationCap, Flame, Phone, Fuel, Droplet
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -65,9 +65,38 @@ const billOptions = [
   id: 9,
   title: "Fees Payment",
   description: "Pay school or college fees",
-  icon: <CreditCard className="w-10 h-10 text-blue-500" />, 
+  icon: <GraduationCap className="w-10 h-10 text-blue-500" />, 
   link: "/fees",
-}
+  },
+  {
+    id: 10,
+    title: "Book Cylinder",
+    description: "Book your LPG gas cylinder easily",
+    icon: <Flame className="w-10 h-10 text-orange-500" />,
+    link: "/book-cylinder",
+  },
+  {
+    id: 11,
+    title: "Broadband / Landline",
+    description: "Pay broadband or landline bills",
+    icon: <Phone className="w-10 h-10 text-green-500" />,
+    link: "/broadband",
+  },
+  {
+    id: 12,
+    title: "Piped Gas",
+    description: "Pay piped natural gas bills",
+    icon: <Fuel className="w-10 h-10 text-yellow-500" />,
+    link: "/piped-gas",
+  },
+  {
+    id: 13,
+    title: "Water",
+    description: "Pay your water utility bills",
+    icon: <Droplet className="w-10 h-10 text-blue-400" />,
+    link: "/water",
+  },
+
 
   
 ];

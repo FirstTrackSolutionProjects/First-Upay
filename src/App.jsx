@@ -65,8 +65,13 @@ import ScanandPay from "./Pages/ScanandPay";
 import ReceiveMoney from "./Pages/ReceiveMoney";
 import PayRent from "./Pages/PayRent";
 import LoanRepayment from "./Pages/LoanRepayment";
-import Entertainment from "./Pages/Entertainment"
+import Entertainment from "./Pages/Entertainment";
+import BookCylinder from "./Pages/BookCylinder";
+import Broadband from "./Pages/Broadband";
+import PipedGas from "./Pages/PipedGas";
+import Water from "./Pages/Water";
 import Footer from "./Components/Footer"
+
 
 
 
@@ -150,6 +155,10 @@ function App() {
           <Route path="/rent" element={<PayRent />} />
           <Route path="/repayment" element={<LoanRepayment />} />
           <Route path="/entertainment" element={<Entertainment />} />
+          <Route path="/Book-cylinder" element={<BookCylinder />} />
+          <Route path="/broadband" element={<Broadband />} />
+          <Route path="/piped-gas" element={<PipedGas />} />
+          <Route path="/water" element={<Water />} />
 
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
