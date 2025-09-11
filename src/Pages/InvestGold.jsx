@@ -66,10 +66,10 @@ export default function InvestGold() {
               <input
                 type="number"
                 value={amount}
-                min={100}
+                min={10}
                 onChange={(e) => {
                 const val = Number(e.target.value);
-                setAmount(val < 100 ? 100 : val); 
+                setAmount(val < 10 ? 10 : val); 
             }}
                     className="bg-transparent outline-none w-24 text-gray-900"
               />

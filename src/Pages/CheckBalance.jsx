@@ -4,6 +4,46 @@ import { Link } from "react-router-dom";
 
 export default function CheckBalance() {
   const [showSheet, setShowSheet] = useState(false);
+  const [authenticated, setAuthenticated] = useState(false);
+  const [pin, setPin] = useState("");
+
+   const correctPin = "1234";
+
+   const handleSubmit = (e) => {
+    e.preventDefault();
+    if (pin === correctPin) {
+      setAuthenticated(true);
+    } else {
+      alert("Incorrect PIN! Try again.");
+      setPin("");
+    }
+  };
+
+if (!authenticated) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-indigo-50 to-blue-100 m-4">
+        <div className="bg-red-100 p-8 rounded-2xl shadow-lg w-80 text-center">
+          <h2 className="text-xl font-bold text-gray-800 mb-4">Enter PIN</h2>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="password"
+              value={pin}
+              onChange={(e) => setPin(e.target.value)}
+              maxLength={4}
+              className="w-full text-center text-2xl tracking-widest border rounded-lg py-2 focus:ring-2 focus:ring-indigo-500 outline-none"
+              placeholder="_ _ _ _"
+            />
+            <button
+              type="submit"
+              className="mt-4 w-full bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition"
+            >
+              Unlock
+            </button>
+          </form>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-orange-100 text-gray-900 m-4 p-4 relative">

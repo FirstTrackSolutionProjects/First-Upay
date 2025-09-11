@@ -60,6 +60,7 @@ export default function FinanceDashboard() {
     { name: "Wallet Topup", icon: <FaWallet size={28} className="text-orange-600" />, link: "/wallet" },
     { name: "Credit Card", icon: <FaReceipt size={28} className="text-red-600" />, link: "/credit-card" },
     { name: "DTH Recharge", icon: <FaSatelliteDish size={28} className="text-indigo-600" />, link: "/dth-recharge" },
+   
   ];
 
   return (

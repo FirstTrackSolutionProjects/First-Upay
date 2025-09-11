@@ -39,6 +39,15 @@ const slides = [
     btn2: { text: "📊 EMI Calculator", link: "/emi-calculator" },
     bg: "from-purple-600 to-fuchsia-400",
   },
+  {
+  id: 5,
+  title: "Invest in Gold 🪙",
+  desc: "Secure your future by investing in digital gold with flexible plans.",
+  btn1: { text: "✨ Smart saving", link: "/smart-saving" },
+  btn2: { text: "📈 Gold-SIP", link: "/invest-gold" },
+  bg: "from-yellow-600 to-amber-300",
+},
+
 ];
 
 const HeroSection = () => {

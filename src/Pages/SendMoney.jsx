@@ -1,21 +1,19 @@
 import { useState } from "react";
-import { FiSearch } from "react-icons/fi";
+import { FiSearch, FiUsers } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 export default function SendMoney() {
   const [search, setSearch] = useState("");
+  const navigate = useNavigate();
 
- 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-300 to-purple-300 text-gray-900 m-4">
+    <div className="min-h-screen bg-gradient-to-b from-blue-100 to-purple-200 text-gray-900 m-4">
       {/* Header */}
-      <div className="flex justify-between items-center p-4 border-b shadow-sm">
-       
-          <div>
-            <h1 className="text-lg font-bold">Send Money</h1>
-            <p className="text-xs text-gray-500">to any UPI app</p>
-          </div>
-       
-       
+      <div className="flex justify-between items-center p-4 border-b shadow-sm  rounded-xl">
+        <div>
+          <h1 className="text-lg font-bold">Send Money</h1>
+          <p className="text-xs text-gray-500">to any UPI app</p>
+        </div>
       </div>
 
       {/* Search */}
@@ -28,6 +26,10 @@ export default function SendMoney() {
             className="bg-transparent outline-none flex-1"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+          />
+           <FiUsers
+            className="text-orange-500 ml-2 cursor-pointer hover:text-blue-600 text-xl"
+            // onClick={() => navigate("/new-payment")} 
           />
         </div>
       </div>
@@ -43,11 +45,12 @@ export default function SendMoney() {
         </span>
       </div>
 
-    
-
       {/* New Payment Button */}
       <div className="fixed bottom-6 right-6">
-        <button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-full shadow-lg font-semibold hover:opacity-90">
+        <button
+          onClick={() => navigate("/new-payment")}
+          className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-full shadow-lg font-semibold hover:opacity-90"
+        >
           + New Payment
         </button>
       </div>

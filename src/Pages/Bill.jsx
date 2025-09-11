@@ -61,6 +61,15 @@ const billOptions = [
     icon: <Banknote className="w-10 h-10 text-green-500" />,
     link: "/repayment",
   },
+  {
+  id: 9,
+  title: "Fees Payment",
+  description: "Pay school or college fees",
+  icon: <CreditCard className="w-10 h-10 text-blue-500" />, 
+  link: "/fees",
+}
+
+  
 ];
 
 const Bill = () => {

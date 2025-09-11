@@ -56,6 +56,7 @@ import UpiQuickpay from "./Pages/UpiQuickpay";
 import RuPayUpi from "./Pages/RupayUpi";
 import CreditCard from "./Pages/CreditCard";
 import SendMoney from "./Pages/SendMoney";
+import NewPayment from "./Pages/NewPayment"
 import SelfAccount from "./Pages/SelfAccount";
 import IFSC from "./Pages/IFSC";
 import Bank from "./Pages/Bank";
@@ -135,6 +136,7 @@ function App() {
           <Route path="/rupay-upi" element={<RuPayUpi />} />
           <Route path="/credit-card" element={<CreditCard />} />
           <Route path="/send-money" element={<SendMoney />} />
+          <Route path="/new-payment" element={<NewPayment />} />
           <Route path="/self-account" element={<SelfAccount />} />
           <Route path="/ifsc" element={<IFSC />} />
 

@@ -12,25 +12,26 @@ export default function UpiTransfer() {
         <h1 className="text-lg sm:text-xl font-semibold text-blue-800 mb-2">
           To new UPI ID/Number
         </h1>
-      
 
         {/* Input Section */}
         <div className="mb-6">
           <label className="block text-sm font-medium mb-2 text-blue-700">
             UPI ID/Number
           </label>
-       <div className="flex border border-blue-400 rounded-full overflow-hidden focus-within:ring-2 focus-within:ring-blue-500 w-full max-w-md mx-auto">
-        <input
+
+          {/* Input Box */}
+          <input
             type="text"
-            className="flex-1 bg-white text-gray-900 px-2 sm:px-3 py-2 text-sm sm:text-base placeholder:text-[10px] sm:placeholder:text-[12px] focus:outline-none rounded-full"
+            className="w-full border border-blue-400 bg-white text-gray-900 px-3 py-2 text-sm sm:text-base placeholder:text-[12px] rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Enter UPI ID / Number"
-        />
-        <button className="bg-blue-600 text-white px-3 sm:px-5 py-2 text-xs sm:text-sm font-medium hover:bg-blue-700 transition rounded-r-full whitespace-nowrap">
-            Verify
-        </button>
-        </div>
+          />
 
-
+          {/* Verify Button niche center */}
+          <div className="flex justify-center mt-3">
+            <button className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition">
+              Verify
+            </button>
+          </div>
         </div>
 
         {/* Example Suggestions */}

@@ -19,11 +19,11 @@ const PromoBanner = () => {
 
         {/* Right Section (Phone Mockup) */}
         <div className="md:w-1/2 flex justify-center">
-          <img
+          {/* <img
             src="https://cdn-icons-png.flaticon.com/512/992/992651.png"
             alt="App Mockup"
             className="w-52 md:w-72 drop-shadow-lg rounded-xl"
-          />
+          /> */}
         </div>
       </div>
     </div>

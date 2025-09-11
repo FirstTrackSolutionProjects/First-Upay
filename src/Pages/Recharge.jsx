@@ -37,7 +37,7 @@
 // }
 
 import React, { useState } from "react";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaUser } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
 export default function Recharge() {
@@ -90,6 +90,7 @@ export default function Recharge() {
           placeholder="Search by Number or Name"
           className="ml-2 flex-1 outline-none text-sm"
         />
+          <FaUser className="text-orange-500 text-lg cursor-pointer " />
       </div>
 
       {/* Reminder Card */}
