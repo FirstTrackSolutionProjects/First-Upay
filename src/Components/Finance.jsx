@@ -9,7 +9,7 @@ export default function Finance() {
     { title: "Gold Loan", icon: <FaCoins size={40} className="text-yellow-500" />, link: "/gold-loan" },
     { title: "Insurance", icon: <FaShieldAlt size={40} className="text-green-600" />, link: "/insurance" },
     { title: "Monthly Gold SIP", icon: <FaCrown size={42} className="text-amber-500" />, link: "/gold-sip", highlight: true },
-    { title: "Invest in Gold", icon: <FaCoins size={40} className="text-blue-600" />, link: "/mutual-funds" },
+    { title: "Mutual Funds", icon: <FaCoins size={40} className="text-blue-600" />, link: "/mutual-funds" },
   
   ];
 
