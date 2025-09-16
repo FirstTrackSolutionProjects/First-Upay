@@ -47,6 +47,15 @@ const slides = [
   btn2: { text: "📈 Gold-SIP", link: "/invest-gold" },
   bg: "from-yellow-600 to-amber-300",
 },
+{
+  id: 6,
+  title: "Mutual Funds 📊",
+  desc: "Grow your wealth with diversified mutual fund investment options.",
+  btn1: { text: "🔎 Explore Funds", link: "/mutual-funds" },
+  btn2: { text: "📈 Start SIP", link: "/mutual-funds" },
+  bg: "from-purple-600 to-indigo-400",
+},
+
 
 ];
 
