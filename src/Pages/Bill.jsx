@@ -1,6 +1,6 @@
 import { 
   Lightbulb, Smartphone, Tv, 
-  CreditCard, Wallet, Banknote, Car, Film, GraduationCap, Flame, Phone, Fuel, Droplet
+  CreditCard, Wallet, Banknote, Car, Film, GraduationCap, Flame, Phone, Fuel, Droplet, Home, Building
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -63,7 +63,7 @@ const billOptions = [
   },
   {
   id: 9,
-  title: "Fees Payment",
+  title: "Tution Fee",
   description: "Pay school or college fees",
   icon: <GraduationCap className="w-10 h-10 text-blue-500" />, 
   link: "/fees",
@@ -91,10 +91,24 @@ const billOptions = [
   },
   {
     id: 13,
-    title: "Water",
+    title: "Water Bill",
     description: "Pay your water utility bills",
     icon: <Droplet className="w-10 h-10 text-blue-400" />,
     link: "/water",
+  },
+  {
+  id: 14,
+  title: "Pay Rent",
+  description: "Pay your house or shop rent securely",
+  icon: <Home className="w-10 h-10 text-green-500" />,
+  link: "/rent",
+  },
+  {
+    id: 15,
+    title: "Municipal Tax",
+    description: "Pay your property or municipal taxes easily",
+    icon: <Building className="w-10 h-10 text-yellow-500" />,
+    link: "/municipal-tax",
   },
 
 

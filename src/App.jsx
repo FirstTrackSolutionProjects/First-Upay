@@ -70,6 +70,9 @@ import BookCylinder from "./Pages/BookCylinder";
 import Broadband from "./Pages/Broadband";
 import PipedGas from "./Pages/PipedGas";
 import Water from "./Pages/Water";
+import MunicipalTax from "./Pages/MunicipalTax";
+import NPS from "./Pages/NPS";
+import Trading from "./Pages/Trading"
 import Footer from "./Components/Footer"
 
 
@@ -159,6 +162,9 @@ function App() {
           <Route path="/broadband" element={<Broadband />} />
           <Route path="/piped-gas" element={<PipedGas />} />
           <Route path="/water" element={<Water />} />
+          <Route path="/municipal-tax" element={<MunicipalTax />} />
+          <Route path="/nps" element={<NPS />} />
+          <Route path="/trading" element={<Trading />} />
 
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
