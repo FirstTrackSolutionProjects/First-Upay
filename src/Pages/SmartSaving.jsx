@@ -10,10 +10,15 @@ export default function SmartSavings() {
     <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col">
       {/* Header */}
       <div className="flex items-center p-4 border-b border-gray-200 bg-white shadow-sm">
+          <img
+            src="/images/smart-savings.jpg"
+            alt="SmartSaving"
+            className="w-full h-96 object-cover lg:h-auto"
+          />
        
-        <h1 className="flex-1 text-center text-lg font-semibold text-gray-800">
+        {/* <h1 className="flex-1 text-center text-lg font-semibold text-gray-800">
           Smart Savings
-        </h1>
+        </h1> */}
 
       </div>
 

@@ -30,8 +30,8 @@ export default function Finance() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
         {visibleOptions.map((opt, index) => (
           <Link
-            key={index}
-            to={opt.link}
+            // key={index}
+            // to={opt.link}
             className="bg-white p-10 rounded-2xl shadow-md hover:shadow-lg transition-all flex flex-col items-center text-center"
           >
             {opt.icon}

@@ -21,6 +21,12 @@ export default function GoldLoan() {
   return (
     <div className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-xl">
       {/* Header */}
+        <img
+            src="/images/gold-loan.jpg"
+            alt="GoldLoan"
+            className="w-full h-96 object-cover lg:h-auto"
+          />
+
       <h2 className="text-2xl font-bold text-gray-800 mb-2">Gold Loan</h2>
       <p className="text-gray-600 mb-6">
         Unlock the value of your gold instantly. Apply for quick and secure gold loans 

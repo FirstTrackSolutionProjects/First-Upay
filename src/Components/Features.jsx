@@ -8,35 +8,35 @@ const features = [
     title: "Mobile Recharge",
     description: "Prepaid & Postpaid recharges instantly",
     icon: <FaMobileAlt className="w-10 h-10 text-purple-600" />,
-    link: "/recharge",
+    // link: "/recharge",
   },
   {
     id: 2,
     title: "Electricity Bill",
     description: "Pay electricity bills securely",
     icon: <FaBolt className="w-10 h-10 text-yellow-500" />,
-    link: "/electricity-bill",
+    // link: "/electricity-bill",
   },
   {
     id: 3,
     title: "FASTag Recharge",
     description: "Recharge your FASTag for toll payments",
     icon: <FaCar className="w-10 h-10 text-blue-500" />,
-    link: "/fastag",
+    // link: "/fastag",
   },
   {
     id: 4,
     title: "Loan",
     description: "Apply for personal & business loans",
     icon: <FaUniversity className="w-10 h-10 text-green-600" />,
-    link: "/loan",
+    // link: "/loan",
   },
 {
     id: 5,
     title: "DTH Recharge",
     description: "Recharge your TV/DTH connections",
     icon: <FaSatelliteDish className="w-10 h-10 text-red-500" />,
-    link: "/dth-recharge",
+    // link: "/dth-recharge",
   },
 ];
 
@@ -50,8 +50,8 @@ const Features = () => {
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
         {displayedFeatures.map((item) => (
           <Link
-            key={item.id}
-            to={item.link}
+            // key={item.id}
+            // to={item.link}
             className="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition"
           >
             <div className="mb-4">{item.icon}</div>

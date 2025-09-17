@@ -104,7 +104,7 @@ const PersonalLoanForm = () => {
        <div className="grid lg:grid-cols-2 bg-white rounded-xl shadow-lg overflow-hidden">
           {/* Left Side - Image */}
           <img
-            src="/Loan/personal-loan.jpg"
+            src="/images/instant-loan.jpg"
             alt="Loan"
             className="w-full h-96 object-cover lg:h-auto"
           />

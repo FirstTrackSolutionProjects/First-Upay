@@ -12,7 +12,7 @@ const slides = [
     title: "Fast, Secure & Easy UPI Payments 🚀",
     desc: "Send and receive money instantly with UPI Pay. 100% secure, anytime, anywhere.",
     btn1: { text: "💸 Send Money", link: "/payment" },
-    btn2: { text: "📱 Scan & Pay", link: "/qr" },
+    btn2: { text: "📱 Scan & Pay", link: "/scan" },
     bg: "from-indigo-600 to-cyan-500",
   },
   {

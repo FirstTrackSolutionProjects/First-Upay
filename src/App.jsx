@@ -73,6 +73,8 @@ import Water from "./Pages/Water";
 import MunicipalTax from "./Pages/MunicipalTax";
 import NPS from "./Pages/NPS";
 import Trading from "./Pages/Trading"
+import CivilScore from "./Pages/CivilScore"
+import PNR from "./Pages/PNR";
 import Footer from "./Components/Footer"
 
 
@@ -165,6 +167,8 @@ function App() {
           <Route path="/municipal-tax" element={<MunicipalTax />} />
           <Route path="/nps" element={<NPS />} />
           <Route path="/trading" element={<Trading />} />
+          <Route path ="/civil" element={<CivilScore />} />
+          <Route path ="/pnr" element={<PNR />} />
 
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />

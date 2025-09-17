@@ -1,15 +1,15 @@
 import React from "react";
 
 const creditCards = [
-  { name: "HDFC Credit Card", logo: "https://upload.wikimedia.org/wikipedia/en/8/8e/HDFC_Bank_Logo.svg" },
-  { name: "SBI Credit Card", logo: "https://seeklogo.com/images/S/sbi-card-logo-0DC5B9C07D-seeklogo.com.png" },
-  { name: "Axis Bank Credit Card", logo: "https://seeklogo.com/images/A/axis-bank-logo-0B8B79BA54-seeklogo.com.png" },
-  { name: "ICICI Credit Card", logo: "https://seeklogo.com/images/I/icici-bank-logo-7F0F5C7E5B-seeklogo.com.png" },
-  { name: "Bank of Baroda Credit Card", logo: "https://seeklogo.com/images/B/bank-of-baroda-logo-48D2E8A6DA-seeklogo.com.png" },
-  { name: "Kotak Mahindra Credit Card", logo: "https://seeklogo.com/images/K/kotak-mahindra-bank-logo-EE0F31275E-seeklogo.com.png" },
-  { name: "Yes Bank Credit Card", logo: "https://seeklogo.com/images/Y/yes-bank-logo-4734986A16-seeklogo.com.png" },
-  { name: "Union Bank Credit Card", logo: "https://seeklogo.com/images/U/union-bank-of-india-logo-6FA45EAB8C-seeklogo.com.png" },
-  { name: "PNB Credit Card", logo: "https://seeklogo.com/images/P/punjab-national-bank-logo-19EED62AB7-seeklogo.com.png" },
+  { name: "HDFC Credit Card", logo: "/Bank/HDFC.png" },
+  { name: "SBI Credit Card", logo: "/Bank/SBI.png" },
+  { name: "Axis Bank Credit Card", logo: "/Bank/Axis.png" },
+  { name: "ICICI Credit Card", logo: "/Bank/icici.png" },
+  { name: "Bank of Baroda Credit Card", logo: "/Bank/BOB.png" },
+  { name: "Kotak Mahindra Credit Card", logo: "/Bank/kotak.png" },
+  { name: "Yes Bank Credit Card", logo: "/Bank/yes.png" },
+  { name: "Union Bank Credit Card", logo: "/Bank/Union.png" },
+  { name: "PNB Credit Card", logo: "/Bank/punjab.png" },
 ];
 
 const CreditCard = () => {
@@ -19,13 +19,16 @@ const CreditCard = () => {
 
       {/* Banner */}
       <div className="bg-indigo-100 rounded-xl p-5 mb-6 text-center border border-indigo-200 shadow-sm">
-        <h2 className="text-xl font-bold text-indigo-700">Manage Your Credit Cards</h2>
+        <img
+            src="/images/credit-card.jpg"
+            alt="CreditCard"
+            className="w-full h-96 object-cover lg:h-auto"
+          />
+        <h2 className="text-xl font-bold text-indigo-700 m-3">Manage Your Credit Cards</h2>
         <p className="text-sm text-gray-600 mt-1">
           Link, scan, and pay with your credit cards to enjoy rewards & cashback
         </p>
-        <button className="mt-3 text-sm font-medium text-indigo-600 hover:text-indigo-800 underline">
-          Learn more →
-        </button>
+      
       </div>
 
       {/* Search */}
