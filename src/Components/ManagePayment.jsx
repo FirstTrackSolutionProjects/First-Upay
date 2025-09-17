@@ -68,7 +68,7 @@ export default function ManagePayments() {
           <span className="font-medium">UPI ID:</span> 1234567890@ybl
         </p>
         <Link
-          to="/qr"
+          to="/scan"
           className="text-xs text-indigo-600 font-semibold flex items-center gap-1"
         >
           <FaQrcode size={14} /> My QR

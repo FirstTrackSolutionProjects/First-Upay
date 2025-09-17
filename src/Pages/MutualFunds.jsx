@@ -14,11 +14,16 @@ import {
 export default function MutualFunds() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col">
+      
       {/* Header */}
-      <div className="flex items-center p-4 border-b border-gray-200 bg-white shadow-sm">
-        <h1 className="flex-1 text-center text-lg font-semibold text-indigo-700">
-          Mutual Funds
-        </h1>
+      <div className="flex items-center p-4 border-b border-gray-200 bg-white shadow-sm ">
+         <img
+            src="/images/mutual-fund.jpg"
+            alt="MutualFund"
+            className="w-full h-96 object-cover lg:h-auto"
+          />
+
+       
       </div>
 
       {/* Investment Ideas */}

@@ -4,12 +4,12 @@ import { useState } from "react";
 
 export default function Travel() {
   const options = [
-    { title: "Bus", icon: <FaBus size={40} className="text-indigo-600"/>, link:"/bus"  },
-    { title: "Train", icon: <FaTrain size={40} className="text-pink-500"/>, link:"/train" },
-    { title: "Flight", icon: <FaPlane size={40} className="text-yellow-500"/>, link:"/flight" },
-    { title: "Luxury Hotels", icon: <FaHotel size={40} className="text-green-600"/>, link:"/hotel" },
-    { title: "Car Rentals", icon: <FaCar size={40} className="text-blue-500"/>, link:"/rental-car" },
-    { title: "Rewards & Cashback", icon: <FaGift size={40} className="text-red-500" />, link: "/rewards" },
+    { title: "Bus", icon: <FaBus size={40} className="text-indigo-600"/> },
+    { title: "Train", icon: <FaTrain size={40} className="text-pink-500"/> },
+    { title: "Flight", icon: <FaPlane size={40} className="text-yellow-500"/> },
+    { title: "Luxury Hotels", icon: <FaHotel size={40} className="text-green-600"/> },
+    { title: "Car Rentals", icon: <FaCar size={40} className="text-blue-500"/> },
+    { title: "Rewards & Cashback", icon: <FaGift size={40} className="text-red-500" /> },
   ];
 
     const [showAll, setShowAll] = useState(false);
@@ -33,8 +33,8 @@ export default function Travel() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full ">
         {visibleOptions.map((opt, index) => (
           <Link
-            key={index}
-            to={opt.link}
+            // key={index}
+            // to={opt.link}
             className="bg-white p-10 rounded-2xl shadow-md hover:shadow-lg transition-all flex flex-col items-center text-center"
           >
             <span className="text-lg font-semibold text-gray-800">{opt.title}</span>

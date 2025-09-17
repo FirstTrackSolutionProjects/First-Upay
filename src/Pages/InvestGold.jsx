@@ -17,13 +17,18 @@ export default function InvestGold() {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col">
-     
+      <img
+            src="/images/gold-sip.jpg"
+            alt="GoldSip"
+            className="w-full h-96 object-cover lg:h-auto"
+          />
       {/* Title */}
       <div className="px-5 py-4">
-        <h1 className="text-lg font-semibold text-emerald-700">
+          
+      <h1 className="text-lg font-semibold text-emerald-700 text-center">
           Invest in 24K Gold at your convenience
         </h1>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-500 text-center">
           Secure storage in trusted bank-grade lockers
         </p>
       </div>
@@ -101,7 +106,7 @@ export default function InvestGold() {
       </div> */}
 
       {/* Recommended */}
-      <div className="px-5 mt-4">
+      <div className="px-5 m-4">
         <p className="text-sm text-gray-700 mb-2">Recommended</p>
         <div className="flex gap-3 flex-wrap">
           {quickAmounts.map((amt) => (
@@ -124,7 +129,7 @@ export default function InvestGold() {
       </div>
 
       {/* Terms */}
-      <div className="flex items-start px-5 mt-auto mb-2 text-xs text-gray-600">
+      <div className="flex items-start px-5 mt-auto m-4 text-xs text-gray-600">
         <input
           type="checkbox"
           checked={checked}
