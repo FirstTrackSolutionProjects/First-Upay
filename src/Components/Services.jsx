@@ -1,6 +1,5 @@
-import React from "react";
-import { Send, Smartphone, Wallet, HandCoins, Gem, LineChart } from "lucide-react"; 
-
+import React, { useState } from "react";
+import { Send, BedDouble, Wallet, HandCoins, Gem, LineChart } from "lucide-react";
 
 const services = [
   {
@@ -15,11 +14,11 @@ const services = [
     description: "Pay electricity, water, gas & other utility bills",
     icon: <Wallet className="w-12 h-12 text-green-600" />,
   },
-  {
+   {
     id: 3,
-    title: "Mobile Recharge",
-    description: "Quick and easy prepaid & postpaid recharges",
-    icon: <Smartphone className="w-12 h-12 text-purple-600" />,
+    title: "Hotel Booking",
+    description: "Find and book hotels at the best prices instantly",
+    icon: <BedDouble className="w-12 h-12 text-purple-600" />, // updated icon
   },
   {
     id: 4,
@@ -42,21 +41,39 @@ const services = [
 ];
 
 const Services = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  // Show first 4 or all
+  const visibleServices = showAll ? services : services.slice(0, 4);
+
   return (
-    <div className="grid md:grid-cols-3 gap-6 p-6">
-      {services.map((service) => (
-        <div
-          key={service.id}
-          className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all flex flex-col items-center text-center"
-        >
-          <div className="mb-4">{service.icon}</div>
-          <h3 className="text-xl font-semibold text-gray-800">
-            {service.title}
-          </h3>
-          <p className="text-gray-500 mt-2">{service.description}</p>
-          
+    <div className="p-6">
+      <div className="grid md:grid-cols-3 gap-6">
+        {visibleServices.map((service) => (
+          <div
+            key={service.id}
+            className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-all flex flex-col items-center text-center"
+          >
+            <div className="mb-4">{service.icon}</div>
+            <h3 className="text-xl font-semibold text-gray-800">
+              {service.title}
+            </h3>
+            <p className="text-gray-500 mt-2">{service.description}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Show More / Show Less Button */}
+      {services.length > 4 && (
+        <div className="flex justify-center mt-6">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition"
+          >
+            {showAll ? "Show Less" : "Show More"}
+          </button>
         </div>
-      ))}
+      )}
     </div>
   );
 };

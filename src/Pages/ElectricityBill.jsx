@@ -110,64 +110,62 @@ export default function Bill() {
     { name: "West Bengal Electricity - Monthly"},
   ]);
 
- return (
-    <div className="p-6 space-y-8">
-      {/* Billers Section */}
-      <div>
-        <h2 className="text-lg font-semibold mb-4">Billers</h2>
-        <div className="space-y-4">
-          {billers.map((item, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-3 border rounded-lg p-3 hover:shadow-md transition"
-            >
-              {/* Circle with Initial */}
-              <div className="w-10 h-10 bg-blue-100 flex items-center justify-center rounded-full flex-shrink-0">
-                <span className="text-blue-600 font-bold text-lg">
-                  {item.name[0]}
-                </span>
-              </div>
+  const [search, setSearch] = useState("");
 
-              {/* Text + Tag */}
-              <div className="min-w-0 flex-1">
-                <h3 className="font-medium text-gray-800 text-sm sm:text-base line-clamp-2">
-                  {item.name}
-                </h3>
-                {item.tag && (
-                  <span className="text-xs text-red-500 font-semibold bg-red-100 px-2 py-0.5 rounded mt-1 inline-block">
-                    {item.tag}
-                  </span>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
+  // Filtered billers (Billers + All Billers)
+  const filteredBillers = [...billers, ...allBillers].filter((item) =>
+    item.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  return (
+    <div className="p-6 space-y-8">
+      <h1 className="text-lg font-bold">Select Provider</h1>
+
+      {/* 🔍 Search Box */}
+      <div className="relative">
+        <input
+          type="text"
+          placeholder="Search by biller"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-full border rounded-lg pl-10 pr-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+        />
+        <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
       </div>
 
-      {/* All Billers Section */}
+      {/* Results Section */}
       <div>
-        <h2 className="text-lg font-semibold mb-4">All Billers</h2>
+        <h2 className="text-lg font-semibold mb-4">Providers</h2>
         <div className="space-y-4">
-          {allBillers.map((item, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-3 border rounded-lg p-3 hover:shadow-md transition"
-            >
-              {/* Circle with Initial */}
-              <div className="w-10 h-10 bg-green-100 flex items-center justify-center rounded-full flex-shrink-0">
-                <span className="text-green-600 font-bold text-lg">
-                  {item.name[0]}
-                </span>
-              </div>
+          {filteredBillers.length > 0 ? (
+            filteredBillers.map((item, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-3 border rounded-lg p-3 hover:shadow-md transition"
+              >
+                {/* Circle with Initial */}
+                <div className="w-10 h-10 bg-blue-100 flex items-center justify-center rounded-full flex-shrink-0">
+                  <span className="text-blue-600 font-bold text-lg">
+                    {item.name[0]}
+                  </span>
+                </div>
 
-              {/* Text */}
-              <div className="min-w-0 flex-1">
-                <h3 className="font-medium text-gray-800 text-sm sm:text-base line-clamp-2">
-                  {item.name}
-                </h3>
+                {/* Text + Tag */}
+                <div className="min-w-0 flex-1">
+                  <h3 className="font-medium text-gray-800 text-sm sm:text-base line-clamp-2">
+                    {item.name}
+                  </h3>
+                  {item.tag && (
+                    <span className="text-xs text-red-500 font-semibold bg-red-100 px-2 py-0.5 rounded mt-1 inline-block">
+                      {item.tag}
+                    </span>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          ) : (
+            <p className="text-gray-500">No providers found.</p>
+          )}
         </div>
       </div>
     </div>

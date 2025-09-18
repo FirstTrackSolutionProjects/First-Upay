@@ -21,8 +21,8 @@ const billOptions = [
   },
   {
     id: 3,
-    title: "Entertainment",
-    description: "Pay for OTT & Subscription services",
+    title: "Movie Tickets",
+    description: "Book Your Movie Tickets",
     icon: <Film className="w-10 h-10 text-red-500" />,
     link: "/entertainment",
   },
@@ -42,7 +42,7 @@ const billOptions = [
   },
   {
     id: 6,
-    title: "Credit Card Bill",
+    title: "Credit Card Bill Payment",
     description: "Pay your credit card dues",
     icon: <CreditCard className="w-10 h-10 text-pink-600" />,
     link: "/credit-card",

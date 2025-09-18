@@ -65,7 +65,7 @@ export default function FinanceDashboard() {
         { name: "Flights", icon: <FaPlane size={28} className="text-blue-600" />, link: "/flight" },
         { name: "Train", icon: <FaTrain size={28} className="text-purple-600" />, link: "/train" },
         { name: "Bus", icon: <FaCar size={28} className="text-red-600" />, link: "/bus" },
-        { name: "Enter tainment", icon: <FaFilm size={28} className="text-purple-600" />, link: "/entertainment" },
+        { name: "Movie Tickets", icon: <FaFilm size={28} className="text-purple-600" />, link: "/entertainment" },
       ],
     },
     {

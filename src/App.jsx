@@ -73,8 +73,9 @@ import Water from "./Pages/Water";
 import MunicipalTax from "./Pages/MunicipalTax";
 import NPS from "./Pages/NPS";
 import Trading from "./Pages/Trading"
-import CivilScore from "./Pages/CivilScore"
+import CibilScore from "./Pages/CibilScore"
 import PNR from "./Pages/PNR";
+import Shopping from "./Pages/Shopping"
 import Footer from "./Components/Footer"
 
 
@@ -114,6 +115,7 @@ function App() {
           <Route path="/electricity-bill" element={<ElectricityBill />} />
           <Route path="/fastag" element={<FasTag />} />
           <Route path="/bill" element={<Bill />} />
+          <Route path="/shop" element={<Shopping />} />
           <Route path="/travel" element={<TravelPage />} />
           <Route path="/bus" element={<Bus />} />
           <Route path="/train" element={<Train />} />
@@ -167,7 +169,7 @@ function App() {
           <Route path="/municipal-tax" element={<MunicipalTax />} />
           <Route path="/nps" element={<NPS />} />
           <Route path="/trading" element={<Trading />} />
-          <Route path ="/civil" element={<CivilScore />} />
+          <Route path ="/cibil" element={<CibilScore />} />
           <Route path ="/pnr" element={<PNR />} />
 
           <Route path="/about" element={<AboutUs />} />
