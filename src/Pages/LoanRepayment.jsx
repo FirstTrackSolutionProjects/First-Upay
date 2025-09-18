@@ -7,123 +7,111 @@ export default function LoanRepayment() {
     { name: "Annapurna Finance Private Limited-MFI" },
     { name: "Bajaj Finance LTD" },
     { name: "Bandhan Bank Loan", tag: "New" },
-    { name: "Belstar MicroFinance LTD"},
+    { name: "Belstar MicroFinance LTD" },
     { name: "HDFC Bank Retails Assets" },
-    { name: "UJJIVAN Small Finance Bank LTD"},
-    { name: "Chaitanya Micro Finance"},
+    { name: "UJJIVAN Small Finance Bank LTD" },
+    { name: "Chaitanya Micro Finance" },
     { name: "DMI Finance" },
     { name: "Muthoot Finance" },
     { name: "Utkarsh Bank Loan Repayment" },
     { name: "HDB Financial Services Limited" },
     { name: "Home Credit" },
-    { name: "HDB Financial Services Limited" },
     { name: "IIFL Finance" },
     { name: "Mahindra and Mahindra Financial Services Limited" },
-    { name: "Muthoot Fincorp Ltd" },
     { name: "Shriram Finance Ltd." },
     { name: "121 Finance Private Limited" },
     { name: "AAVAS FINANCIERS LIMITED" },
     { name: "AMU Leasing Pvt Ltd" },
-    { name: "APAC Financial Services Pvt Ltd" },
     { name: "ART Housing Finance (India) Limited" },
-    { name: "ARTH" },
     { name: "AU Small Finance Bank" },
-    { name: "Aadhar Housing Finance Limited" },
-    { name: "Achiievers Finance Personal Loan" },
-    { name: "Adarsh Laxmi Nidhi" },
-    { name: "Aditya Birla Financial Services" },
     { name: "Aditya Birla Housing Finance Limited" },
-    { name: "Agora Microfinance India Ltd - AMIL" },
-    { name: "Agriwise Finserv Limited" },
-    { name: "Aham Housing Finance Private Limited" },
-    { name: "Ajeevak Nidhi Limited" },
-    { name: "Akasa Finance Limited" },
-    { name: "Alfastar India Nidhi Limited" },
-    { name: "Alleywell Finserve Nidhi Limited" },
-    { name: "Altum Credo Home Finance" },
-    { name: "Amarpadma Credits Pvt Ltd" },
-    { name: "Ambit Finvest Pvt Ltd" },
-    { name: "Amrit Malwa Capital Limited" },
-    { name: "Amritversha Nidhi Limited" },
-    { name: "Ananya Vikash Nidhi Limited" },
-    { name: "Andhra Pradesh Grameena Bank" },
-    { name: "Andhra Pragathi Grameena Bank Loan Repayment" },
-    { name: "Ankur Trade Links Pvt Ltd" },
-    { name: "Annapurna Finance Private Limited - MSME" },
-    { name: "Anscor Capital And Investment Pvt Ltd" },
-    { name: "Aptus Finance India Private Limited" },
-    { name: "Aptus Value Housing Finance India Limited" },
-    { name: "Aris Capital Pvt Limited" },
-    { name: "Arman Financial Services Limited" },
-    { name: "Arohan Financial Services Ltd" },
-    { name: "Arthan Finance Pvt Ltd" },
-    { name: "Arthmate Financing India Private Limited" },
-    { name: "Aryabharat Digital Nidhi Ltd" },
-    { name: "Ascend Capital" },
-    { name: "Ashv Finance" },
-    { name: "Asirvad Micro Finance Ltd" },
-    { name: "Auxilo Finserve Private Limited" },
-    { name: "Avanse Financial Services Ltd" },
-    { name: "Avanti Finance Private Limited" },
     { name: "Axis Bank Limited - Retail Loan" },
-    { name: "Axis Bank Limited-Digital Loan" },
-    { name: "Axis Bank Limited-Microfinance" },
-    { name: "Axis Bank Ltd - MCA" },
-    { name: "Axis Finance Limited" },
-    { name: "Ayaan Finserve India Private LTD" },
-    { name: "Aye Finance Pvt. Ltd." },
-    { name: "BERAR Finance Limited" },
-    { name: "BSS Microfinance Limited" },
-    { name: "BWDA Finance Ltd" },
-    { name: "Babasaheb Deshmukh Sahakari Bank Limited Atpadi" },
-    { name: "Baid Finserv Limited" },
-    { name: "Bajaj Auto Credit Limited" },
-    { name: "Bajaj Auto Finance" },
-    { name: "Bajaj Finance Limited Agent Collection" },
-    { name: "Bajaj Housing Finance Limited" },
-    { name: "Bazaari Finance" },
-    { name: "Behariji Dealers Pvt Ltd" },
-    { name: "Beryl Securities" },
-    { name: "Best Capital Services Ltd" },
-    { name: "Bhala Finance Private Limited" },
-    { name: "Bharat Financial Inclusion Ltd" },
-    { name: "Bhgala Livelihood Finserv Limited" },
-    { name: "Bike Bazaar" },
-    { name: "Blackbuck Finserve" },
-    { name: "Boundparivar Loan" },
-    { name: "CASHe" },
-    { name: "CDL Financial Services Private Limited" },
-    { name: "CKM MFS Foundation" },
-    { name: "CNH Industrial Capital Pvt. Ltd." },
-    { name: "CSL Finance" },
-    { name: "Can Fin Homes Ltd" },
-    { name: "Capital India Finance Limited" },
-    { name: "Capital India Home Loans Limited" },
-    { name: "Capital Trust Limited" },
-    { name: "Capri Global Capital Limited (MSME Loan)" },
-    { name: "Capri Global Capital Limited (Solar Loan)" },
-    { name: "Capri Global Housing Finance" },
-    { name: "Capri global Capital Limited (Gold Loan)" },
-    { name: "Cars24" },
-    { name: "Cashtree Finance" },
-    { name: "Chachyot Nidhi" },
-    { name: "Choice Finserv Pvt Ltd" },
     { name: "Cholamandalam Investment and Finance Company Limited" },
-    { name: "Clix Capital"},
-    { name: "Credin"},
-    { name: "Credit One Payments Solutions Pvt Ltd"},
-    { name: "Credit Saison"},
-    { name: "Credit Wise Capital" },
-    { name: "CreditAccessGrameen - Retail Finance"},
-    { name: "Criss Financial Limited"},
-    { name: "DCB Bank Loan Repayment"},
+    { name: "ESAF Small Finance Bank(Micro Loans)" },
+    { name: "ESAF Small Finance Bank(Retails Loans)" },
+    { name: "Easy Home Finance Limited" },
+    { name: "Eduvanz Financing Pvt. Ltd." },
+    { name: "Ekagrata Finance" },
+    { name: "Electronica Finance Limited" },
+    { name: "Emerald Finance" },
+    { name: "Emgee Muthoot Nidhi Ltd" },
+    { name: "Equitas SFB - Microfinance Loan" },
+    { name: "Equitas Small Finance Bank - Retail Loan" },
+    { name: "Esco Elettil Nidhi Limited" },
+    { name: "Ezfinanz" },
+    { name: "Faircent-Borrower EMI Account" },
+    { name: "Fedbank Financial Services Limited" },
+    { name: "Federal Bank Loan Repayment" },
+    { name: "Feemonk" },
+    { name: "Fexprime Finance (P) Ltd (Formerly Bussan Auto Finance)" },
+    { name: "Fin Coopers Capital Private Limited" },
+    { name: "Finazone Micro Services Foundation" },
+    { name: "Fincare Small Finance Bank" },
+    { name: "Finnable" },
+    { name: "Finova Capital Private Ltd" },
+    { name: "Five Star Business Finance" },
+    { name: "FlexiLoans" },
+    { name: "Flexsalary" },
+    { name: "Fusion Finance Ltd MFI" },
+    { name: "Fusion Finance Ltd-MSME" },
+    { name: "G U Financial Services Pvt Ltd" },
+    { name: "Geo Bros Muthoot Nidhi Ltd" },
+    { name: "Girnar Capital (Formerly Khemlani Finance)" },
+    { name: "Goldline Finance Private Limited (Capital Now)" },
+    { name: "Grameen Koota Microfinance (CreditAccess Grameen Ltd)" },
+    { name: "Grihum Housing Finance Limited" },
+    { name: "GrowXCD Finance Private Limited" },
+    { name: "HGNL Nidhi Limited" },
+    { name: "HMKA Nidhi Ltd" },
+    { name: "HMT Finance Pvt Ltd" },
+    { name: "HealthFin" },
+    { name: "Hedge Finance Ltd" },
+    { name: "Hero FinCorp Limited" },
+    { name: "Hero Housing Finance Ltd" },
+    { name: "Hindon Mercantile Limited - Mufin" },
+    { name: "Hinduja Housing Finance Limited" },
+    { name: "Hinduja Leyland Finance" },
+    { name: "Hiranandani Financial Services Pvt Ltd" },
+    { name: "Home First Finance Company India Limited" },
+    { name: "Hytone" },
+    { name: "ICICI BANK - Interest Repayment Loans" },
+    { name: "ICICI Bank Ltd - Loans" },
+    { name: "IDF Financial Services Private Limited" },
+    { name: "IDFC FIRST Bank Ltd" },
+    { name: "IFFCO Kisan Finance Limited" },
+    { name: "IFL Finance Ltd Gold Loan" },
+    { name: "IFL Finance Ltd Home Loan" },
+    { name: "IIFL Home Finance" },
+    { name: "IIFL Samasta Finance Ltd - Microfinance Loans" },
+    { name: "IIFL Samasta Finance Ltd - Retail Loans" },
+    { name: "IKF Finance Ltd" },
+    { name: "INDIAP2P" },
+    { name: "INDUSIND BANK - CFD" },
+    { name: "IREP Credit Capital Private Limited" },
+    { name: "ITI Credit Limited Erstwhile Fortune Credit Capital Limited" },
+    { name: "ITI Finance Limited" },
+    { name: "ITI Housing Finance Limited" },
+    { name: "InCred" },
+    { name: "Indel Money Limited" },
+    { name: "India Home Loan Limited" },
+    { name: "India Shelter Finance Corporation Limited" },
+    { name: "Indiabulls Commercial Credit Ltd" },
+    { name: "Indian Bank Loan EMI" },
+    { name: "Indifi" },
+    { name: "Indostar Capital Finance Limited - CV" },
+    { name: "Indostar Capital Finance Limited - SME" },
+    { name: "Indus Fortune" },
+    { name: "Infinity Fincorp Solutions Pvt Ltd"},
+    { name: "JM Financial Home Loans Ltd."},
+    { name: "Jain Autofin"},
+    { name: "jain Motor Finmart"},
+    { name: "Jana Small Finance Bank"},
+    { name: "Janakalyan Financial Services Pvt Ltd"},
+    { name: "janasha Finance"},
+    { name: "Jassi Hire Purchase Ltd"}
 
 
 
-
-
-
-   
 
   ]);
 
@@ -142,6 +130,14 @@ export default function LoanRepayment() {
   // state for sheet
   const [showFilter, setShowFilter] = useState(false);
 
+  // search state
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // filter billers based on search
+  const filteredBillers = loanBillers.filter((item) =>
+    item.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-blue-50 to-white p-4 text-gray-800">
       {/* Header */}
@@ -155,6 +151,8 @@ export default function LoanRepayment() {
         <input
           type="text"
           placeholder="Search by lender"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
           className="ml-2 flex-1 outline-none text-sm bg-transparent text-gray-700 placeholder-gray-400"
         />
       </div>
@@ -186,29 +184,35 @@ export default function LoanRepayment() {
       <div>
         <h2 className="text-gray-800 font-semibold mb-3">All Loan Billers</h2>
         <div className="space-y-3">
-          {loanBillers.map((item, i) => (
-            <div
-              key={i}
-              className="flex items-center justify-between bg-white p-4 rounded-xl shadow-sm"
-            >
-              <div className="flex items-center gap-3">
+          {filteredBillers.length > 0 ? (
+            filteredBillers.map((item, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm"
+              >
                 {/* Logo Circle */}
-                <div className="w-10 h-10 bg-blue-100 flex items-center justify-center rounded-full">
-                  <span className="text-blue-600 font-bold">{item.name[0]}</span>
+                <div className="w-10 h-10 bg-blue-100 flex items-center justify-center rounded-full flex-shrink-0">
+                  <span className="text-blue-600 font-bold text-sm">
+                    {item.name[0]}
+                  </span>
                 </div>
 
-                {/* Biller Name */}
-                <h3 className="font-medium text-gray-900">{item.name}</h3>
-
-                {/* New Tag */}
-                {item.tag && (
-                  <span className="ml-2 text-xs text-white font-semibold bg-red-500 px-2 py-0.5 rounded">
-                    {item.tag}
-                  </span>
-                )}
+                {/* Biller Name + Tag */}
+                <div className="min-w-0 flex-1">
+                  <h3 className="font-medium text-gray-900 text-sm sm:text-base break-words">
+                    {item.name}
+                  </h3>
+                  {item.tag && (
+                    <span className="text-xs text-white font-semibold bg-red-500 px-2 py-0.5 rounded mt-1 inline-block">
+                      {item.tag}
+                    </span>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          ) : (
+            <p className="text-gray-500 text-sm">No lenders found</p>
+          )}
         </div>
       </div>
 

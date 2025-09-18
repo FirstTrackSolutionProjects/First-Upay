@@ -1,15 +1,18 @@
 import React from "react";
 
 const banks = [
-  { name: "HDFC Bank Credit Card", logo: "https://upload.wikimedia.org/wikipedia/en/8/8e/HDFC_Bank_Logo.svg" },
-  { name: "SBI Credit Card", logo: "https://seeklogo.com/images/S/sbi-card-logo-0DC5B9C07D-seeklogo.com.png" },
-  { name: "Axis Bank Credit Card", logo: "https://seeklogo.com/images/A/axis-bank-logo-0B8B79BA54-seeklogo.com.png" },
-  { name: "ICICI Bank Credit Card", logo: "https://seeklogo.com/images/I/icici-bank-logo-7F0F5C7E5B-seeklogo.com.png" },
-  { name: "Bank of Baroda Credit Card", logo: "https://seeklogo.com/images/B/bank-of-baroda-logo-48D2E8A6DA-seeklogo.com.png" },
-  { name: "Kotak Mahindra Bank Credit Card", logo: "https://seeklogo.com/images/K/kotak-mahindra-bank-logo-EE0F31275E-seeklogo.com.png" },
-  { name: "Yes Bank Credit Card", logo: "https://seeklogo.com/images/Y/yes-bank-logo-4734986A16-seeklogo.com.png" },
-  { name: "Union Bank Credit Card", logo: "https://seeklogo.com/images/U/union-bank-of-india-logo-6FA45EAB8C-seeklogo.com.png" },
-  { name: "Punjab National Bank Credit Card", logo: "https://seeklogo.com/images/P/punjab-national-bank-logo-19EED62AB7-seeklogo.com.png" },
+  { name: "HDFC Bank Credit Card", logo: "/Bank/HDFC.png" },
+  { name: "SBI Credit Card", logo: "/Bank/SBI.png" },
+  { name: "Axis Bank Credit Card", logo: "/Bank/Axis.png" },
+  { name: "ICICI Bank Credit Card", logo: "/Bank/icici.png" },
+  { name: "Bank of Baroda Credit Card", logo: "/Bank/BOB.png" },
+  { name: "Kotak Mahindra Bank Credit Card", logo: "/Bank/Kotak.png" },
+  { name: "Yes Bank Credit Card", logo: "/Bank/yes.png" },
+  { name: "Union Bank Credit Card", logo: "/Bank/Union.png" },
+  { name: "Punjab National Bank Credit Card", logo: "/Bank/punjab.png" },
+  { name: "Bandhan Bank", logo: "/Bank/bandhan.png"},
+  { name: "Induslnd Bank", logo: "/Bank/induslnd.png"},
+  { name: "IDFC Bank", logo: "/Bank/idfc.png"},
 ];
 
 const RupayUpi = () => {

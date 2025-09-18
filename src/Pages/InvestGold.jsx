@@ -72,9 +72,14 @@ export default function InvestGold() {
                 type="number"
                 value={amount}
                 min={10}
+                max={100000}
                 onChange={(e) => {
-                const val = Number(e.target.value);
-                setAmount(val < 10 ? 10 : val); 
+                let val = Number(e.target.value);
+
+                if (val < 10 ? 10 : val); 
+                if (val > 100000) val = 100000;
+
+                  setAmount(val);
             }}
                     className="bg-transparent outline-none w-24 text-gray-900"
               />

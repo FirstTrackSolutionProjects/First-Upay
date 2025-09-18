@@ -23,7 +23,7 @@ const services = [
   },
   {
     id: 4,
-    title: "Loan Services",
+    title: "Instant Loan",
     description: "Apply for personal & business loans with flexible EMIs",
     icon: <HandCoins className="w-12 h-12 text-yellow-500" />,
   },

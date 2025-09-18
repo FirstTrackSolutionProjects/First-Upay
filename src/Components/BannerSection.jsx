@@ -59,10 +59,7 @@ const slides = [
 
 ];
 
-const HeroSection = () => {
-  
-
-
+const BannerSection = () => {
   return (
       <section
       className="relative w-full h-[60vh] overflow-hidden mt-6">
@@ -86,13 +83,13 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl mb-6 max-w-2xl">{slide.desc}</p>
             <div className="flex flex-col md:flex-row gap-4">
               <Link
-                // to={slide.btn1.link}
+                to={slide.btn1.link}
                 className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow hover:bg-gray-100 transition"
               >
                 {slide.btn1.text}
               </Link>
               <Link
-                // to={slide.btn2.link}
+                to={slide.btn2.link}
                 className="px-6 py-3 bg-black/30 backdrop-blur text-white font-semibold rounded-lg shadow hover:bg-black/50 transition"
               >
                 {slide.btn2.text}
@@ -106,4 +103,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default BannerSection;

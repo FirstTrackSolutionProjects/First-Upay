@@ -25,7 +25,7 @@ import LoanApply from "./Pages/LoanApply";
 import PersonalLoan from "./Pages/PersonalLoan";
 import BusinessLoan from "./Pages/BusinessLoan";
 import GoldLoan from "./Pages/GoldLoan";
-import GoldSip from "./Pages/GoldSip";
+// import GoldSip from "./Pages/GoldSip";
 import Insurance from "./Pages/Insurance";
 import VehicleInsurance from "./Pages/VehicleInsurance";
 import HealthInsurance from "./Pages/HealthInsurance";
@@ -133,7 +133,7 @@ function App() {
           <Route path="/sip-funds" element={<BestSip />} />
           <Route path="/funds/:id" element={<FundsDetail />} />
           <Route path="/gold-loan" element={<GoldLoan />} />
-          <Route path="/gold-sip" element={<GoldSip />} />
+          {/* <Route path="/gold-sip" element={<GoldSip />} /> */}
           <Route path="/insurance" element={<Insurance />} />
           <Route path="/insurance/vehicle" element={<VehicleInsurance />} />
           <Route path="/insurance/health" element={<HealthInsurance />} />

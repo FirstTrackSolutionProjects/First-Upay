@@ -43,9 +43,13 @@ export default function SmartSavings() {
           type="number"
           value={amount}     
            min={10} 
+            max={100000}
             onChange={(e) => {
-                const val = Number(e.target.value);
-                setAmount(val < 10 ? 10 : val); 
+                let val = Number(e.target.value);
+                if (val < 10 ? 10 : val); 
+                if (val > 100000) val = 100000;
+
+                  setAmount(val);
             }}
           className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-lg focus:ring-2 focus:ring-teal-500 focus:outline-none"
         />
