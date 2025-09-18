@@ -5,7 +5,7 @@ const NavBar = ({toggleSideBar}) => {
   return (
     <nav className="bg-gradient-to-r from-blue-400 via bg-purple-500 to-pink-500 text-white px-6 py-3 flex justify-between items-center shadow-lg">
        <Link to="/" className="text-2xl font-bold">
-       <img src="/images/Logo 2.png" alt="logo" className="w-24 h-10 inline-block object-cover ml-[-4px]"/>
+       <img src="/images/Logo 3.png" alt="logo" className="w-24 h-10 inline-block object-cover ml-[-4px]"/>
        
       </Link>
       <div className=" hidden md:flex gap-6  space-x-6">

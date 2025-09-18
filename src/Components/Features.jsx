@@ -1,4 +1,4 @@
-import { FaMobileAlt, FaBolt, FaCar, FaSatelliteDish, FaUniversity } from "react-icons/fa";
+import { FaMobileAlt, FaBolt, FaCar, FaSatelliteDish, FaFilm, FaFireAlt, FaBurn, FaTint, FaWifi, FaBookOpen } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -25,19 +25,56 @@ const features = [
     // link: "/fastag",
   },
   {
-    id: 4,
-    title: "Loan",
-    description: "Apply for personal & business loans",
-    icon: <FaUniversity className="w-10 h-10 text-green-600" />,
-    // link: "/loan",
+  id: 4,
+  title: "Entertainment",
+  description: "Explore movies, music & more",
+  icon: <FaFilm className="w-10 h-10 text-purple-600" />, 
+  // link: "/entertainment",
   },
-{
+
+  {
     id: 5,
     title: "DTH Recharge",
     description: "Recharge your TV/DTH connections",
     icon: <FaSatelliteDish className="w-10 h-10 text-red-500" />,
     // link: "/dth-recharge",
   },
+  {
+    id: 6,
+    title: "Book Cylinder",
+    description: "Book your LPG gas cylinder online",
+    icon: <FaFireAlt className="w-10 h-10 text-orange-600" />,
+    // link: "/book-cylinder",
+  },
+  {
+    id: 7,
+    title: "Piped Gas",
+    description: "Pay your piped gas bills instantly",
+    icon: <FaBurn className="w-10 h-10 text-yellow-600" />,
+    // link: "/piped-gas",
+  },
+  {
+    id: 8,
+    title: "Water Bill",
+    description: "Pay your water utility bills",
+    icon: <FaTint className="w-10 h-10 text-blue-600" />,
+    // link: "/water-bill",
+  },
+  {
+    id: 9,
+    title: "Broadband",
+    description: "Pay your broadband/landline bills",
+    icon: <FaWifi className="w-10 h-10 text-green-600" />,
+    // link: "/broadband",
+  },
+  {
+    id: 10,
+    title: "Tuition Fees",
+    description: "Pay tuition and coaching fees online",
+    icon: <FaBookOpen className="w-10 h-10 text-indigo-600" />,
+    // link: "/tuition-fees",
+  },
+
 ];
 
 const Features = () => {

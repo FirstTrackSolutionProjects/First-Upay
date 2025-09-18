@@ -56,7 +56,7 @@ export default function FinanceDashboard() {
         { name: "Mobile Recharge", icon: <FaMobileAlt size={28} className="text-purple-600" />, link: "/recharge" },
         { name: "Electricity Bill", icon: <FaBolt size={28} className="text-yellow-500" />, link: "/electricity-bill" },
         { name: "Loan RePayment", icon: <FaMoneyBillWave size={28} className="text-blue-600" />, link: "/repayment" },
-        { name: "Credit Card Apply", icon: <FaCreditCard size={28} className="text-red-600" />, link: "/credit-card" },
+        { name: " Apply Credit Card", icon: <FaCreditCard size={28} className="text-red-600" />, link: "/credit-card" },
       ],
     },
     {
@@ -65,7 +65,7 @@ export default function FinanceDashboard() {
         { name: "Flights", icon: <FaPlane size={28} className="text-blue-600" />, link: "/flight" },
         { name: "Train", icon: <FaTrain size={28} className="text-purple-600" />, link: "/train" },
         { name: "Bus", icon: <FaCar size={28} className="text-red-600" />, link: "/bus" },
-        { name: "Entertainment", icon: <FaFilm size={28} className="text-purple-600" />, link: "/entertainment" },
+        { name: "Enter tainment", icon: <FaFilm size={28} className="text-purple-600" />, link: "/entertainment" },
       ],
     },
     {
@@ -153,16 +153,16 @@ export default function FinanceDashboard() {
         </div>
 
         {/* Utilities */}
-        <div className={`${getSectionGradient("Utilities")} rounded-xl shadow-md p-4`}>
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">Utilities</h3>
+        <div className={`${getSectionGradient("Check Your Status")} rounded-xl shadow-md p-4`}>
+          <h3 className="text-lg font-semibold text-gray-800 mb-4">Check Your Status</h3>
           <div className="grid grid-cols-2 gap-4">
-            <Link to="/civil" className="flex flex-col items-center justify-center p-3 bg-white/70 rounded-lg hover:bg-indigo-50 transition">
+            <Link to="/cibil" className="flex flex-col items-center justify-center p-3 bg-white/70 rounded-lg hover:bg-indigo-50 transition">
               <FaReceipt size={28} className="text-green-600" />
-              <span className="mt-2 text-sm font-medium text-gray-700">Civil Score</span>
+              <span className="mt-2 text-sm font-medium text-gray-700"> Check Your Cibil Score</span>
             </Link>
             <Link to="/pnr" className="flex flex-col items-center justify-center p-3 bg-white/70 rounded-lg hover:bg-indigo-50 transition">
               <FaTrain size={28} className="text-blue-600" />
-              <span className="mt-2 text-sm font-medium text-gray-700">Track PNR Status</span>
+              <span className="mt-2 text-sm font-medium text-gray-700">Track Your PNR Status</span>
             </Link>
           </div>
         </div>

@@ -10,6 +10,9 @@ const creditCards = [
   { name: "Yes Bank Credit Card", logo: "/Bank/yes.png" },
   { name: "Union Bank Credit Card", logo: "/Bank/Union.png" },
   { name: "PNB Credit Card", logo: "/Bank/punjab.png" },
+  { name: "Bandhan Bank", logo: "/Bank/bandhan.png"},
+  { name: "Induslnd Bank", logo: "/Bank/induslnd.png"},
+  { name: "IDFC Bank", logo: "/Bank/idfc.png"},
 ];
 
 const CreditCard = () => {

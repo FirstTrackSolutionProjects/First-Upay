@@ -78,7 +78,13 @@ export default function GoldLoan() {
           name="loanAmount"
           placeholder="Loan Amount Needed (₹)"
           value={formData.loanAmount}
-          onChange={handleChange}
+            min={500} 
+            max={100000}
+           onChange={(e) => {
+          let val = Number(e.target.value);
+          if (val > 100000) val = 100000;
+          setFormData({ ...formData, loanAmount: val });
+        }}
           className="w-full p-3 border rounded-lg"
           required
         />

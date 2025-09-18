@@ -1,7 +1,25 @@
 import React from "react";
 import { FaHome, FaBuilding, FaUniversity } from "react-icons/fa";
+import { useState } from "react"
 
 export default function PayRent() {
+
+    const [rentAmount, setRentAmount] = useState("");
+  const [error, setError] = useState("");
+
+  const handleRentChange = (e) => {
+    const value = e.target.value;
+    setRentAmount(value);
+
+    if (value && Number(value) < 500) {
+      setError("Rent amount must be at least ₹500");
+      } else if (value && Number(value) > 100000) {
+      setError("Rent amount cannot exceed ₹1,00,000");
+    } else {
+      setError("");
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-indigo-200 to-white p-4 m-4">
       {/* Header */}
@@ -45,11 +63,11 @@ export default function PayRent() {
         </div>
          <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
-            Aadhar Card
+            Aadhaar Card Number
           </label>
          <input
             type="text"
-            placeholder="Aadhar Card"
+            placeholder="0000 0000 0000"
             className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-400 focus:outline-none"
           />
           </div>
@@ -61,13 +79,20 @@ export default function PayRent() {
           <input
             type="number"
             placeholder="Enter amount"
-            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+            min={500}
+            max={100000}
+            value={rentAmount}
+            onChange={handleRentChange}
+             className={`w-full border rounded-lg px-3 py-2 focus:ring-2 focus:outline-none ${
+              error ? "border-red-500 focus:ring-red-400" : "border-gray-300 focus:ring-indigo-400"
+            }`}
           />
+          {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
         </div>
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
-            Rent For (Month/Year)
+            Rent For (Month)
           </label>
           <input
             type="text"
@@ -76,7 +101,14 @@ export default function PayRent() {
           />
         </div>
 
-        <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl py-3">
+         <button
+          disabled={!!error || !rentAmount}
+          className={`w-full font-semibold rounded-xl py-3 ${
+            error || !rentAmount
+              ? "bg-gray-400 cursor-not-allowed text-white"
+              : "bg-indigo-600 hover:bg-indigo-700 text-white"
+          }`}
+        >
           Proceed to Pay
         </button>
       </div>
