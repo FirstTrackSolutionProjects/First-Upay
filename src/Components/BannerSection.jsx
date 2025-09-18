@@ -19,7 +19,7 @@ const slides = [
     id: 2,
     title: "Pay Bills in Seconds ⚡",
     desc: "Electricity, water, mobile recharge & more — all in one place.",
-    btn1: { text: "📂 Pay Bills", link: "/bills" },
+    btn1: { text: "📂 Pay Bills", link: "/bill" },
     btn2: { text: "📞 Recharge Now", link: "/recharge" },
     bg: "from-pink-600 to-orange-400",
   },

@@ -26,7 +26,7 @@ const features = [
   },
   {
   id: 4,
-  title: "Entertainment",
+  title: "Movie Tickets",
   description: "Explore movies, music & more",
   icon: <FaFilm className="w-10 h-10 text-purple-600" />, 
   // link: "/entertainment",

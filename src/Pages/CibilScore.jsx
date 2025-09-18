@@ -1,23 +1,23 @@
 import { FaCreditCard, FaInfoCircle } from "react-icons/fa";
 
-export default function CivilScore() {
+export default function CibilScore() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
       <div className="max-w-2xl w-full bg-white rounded-2xl shadow-lg p-6">
         {/* Title */}
         <img
-            src="/images/civil-score.jpg"
-            alt="CivilScore"
+            src="/images/cibil-score.jpg"
+            alt="CibilScore"
             className="w-full h-96 object-cover lg:h-auto"
           />
         <div className="flex items-center gap-3 m-4">
           <FaCreditCard className="text-indigo-600 text-3xl" />
-          <h1 className="text-2xl font-bold text-gray-800">Check Your Civil Score</h1>
+          <h1 className="text-2xl font-bold text-gray-800">Check Your Cibil Score</h1>
         </div>
 
         {/* Info */}
         <p className="text-gray-600 mb-4">
-          Your Civil Score helps lenders evaluate your creditworthiness. A higher score increases your chances of getting loans and better interest rates.
+          Your Cibil Score helps lenders evaluate your creditworthiness. A higher score increases your chances of getting loans and better interest rates.
         </p>
 
         {/* Score Card */}
