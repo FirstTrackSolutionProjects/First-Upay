@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { FiSearch, FiUsers } from "react-icons/fi";
+import { FaSearch, FaUser } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { SiPhonepe, SiGooglepay, SiPaytm } from "react-icons/si";
+import { MdPayment } from "react-icons/md";
 
 export default function SendMoney() {
   const [search, setSearch] = useState("");
@@ -9,25 +11,31 @@ export default function SendMoney() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-100 to-purple-200 text-gray-900 m-4">
       {/* Header */}
-      <div className="flex justify-between items-center p-4 border-b shadow-sm  rounded-xl">
-        <div>
+      <div className=" p-4 border-b shadow-sm  rounded-xl">
           <h1 className="text-lg font-bold">Send Money</h1>
-          <p className="text-xs text-gray-500">to any UPI app</p>
+
+          <div className="flex items-center gap-2 mt-1 text-gray-500 text-sm">
+          <span>to any UPI app</span>
+          <SiPhonepe className="text-purple-600 text-2xl" title="PhonePe" />
+          <MdPayment className="text-green-600 text-2xl" title="BHIM" />
+          <SiGooglepay className="text-blue-600 text-2xl" title="GPay" />
+          <SiPaytm className="text-sky-600 text-2xl" title="Paytm" />
         </div>
       </div>
+
 
       {/* Search */}
       <div className="p-4">
         <div className="flex items-center bg-gray-100 rounded-lg px-3 py-2">
-          <FiSearch className="text-gray-500 mr-2" />
+          <FaSearch className="text-gray-500 mr-2" />
           <input
             type="text"
-            placeholder="Start a new payment from here"
+            placeholder="Search By Number or Name"
             className="bg-transparent outline-none flex-1"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-           <FiUsers
+           <FaUser
             className="text-orange-500 ml-2 cursor-pointer hover:text-blue-600 text-xl"
             // onClick={() => navigate("/new-payment")} 
           />
@@ -40,9 +48,9 @@ export default function SendMoney() {
           <h2 className="font-semibold">Split Expenses</h2>
           <p className="text-sm text-gray-600">Track & settle with friends</p>
         </div>
-        <span className="text-xs font-medium bg-green-200 text-green-800 px-2 py-1 rounded-full">
+        {/* <span className="text-xs font-medium bg-green-200 text-green-800 px-2 py-1 rounded-full">
           NEW
-        </span>
+        </span> */}
       </div>
 
       {/* New Payment Button */}

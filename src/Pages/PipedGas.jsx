@@ -1,7 +1,10 @@
 import React from "react";
 import {  FiSearch } from "react-icons/fi";
+import { useState } from "react"
 
 export default function PipedGas() {
+   const [query, setQuery] = useState("");
+
   const odishaBillers = [
     { name: "AG&P Pratham - AGP CGD India Pvt Ltd" },
     { name: "Assam Gas Company Limited (Prepaid)" },
@@ -14,6 +17,14 @@ export default function PipedGas() {
     { name: "Mahanagar Gas (MGL)" },
     { name: "Adani Total Gas" },
   ];
+
+   const filterItems = (arr) =>
+    arr.filter((item) =>
+      item.name.toLowerCase().includes(query.trim().toLowerCase())
+    );
+
+  const filteredOdisha = filterItems(odishaBillers);
+  const filteredAll = filterItems(allBillers);
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 m-4">
@@ -32,6 +43,8 @@ export default function PipedGas() {
             type="text"
             placeholder="Select Provider"
             className="flex-1 bg-transparent outline-none text-gray-700"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
           />
         </div>
       </div>
@@ -39,10 +52,10 @@ export default function PipedGas() {
       {/* Biller Lists */}
       <div className="p-4 font-semibold">
         {/* Billers in Odisha */}
-        <Section title="Billers in Odisha" items={odishaBillers} />
+        <Section title="Billers in Odisha" items={filteredOdisha} />
 
         {/* All Billers */}
-        <Section title="All Billers" items={allBillers} />
+        <Section title="All Billers" items={filteredAll} />
       </div>
     </div>
   );
