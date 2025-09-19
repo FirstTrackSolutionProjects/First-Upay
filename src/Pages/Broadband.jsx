@@ -1,6 +1,5 @@
-
-import React from "react";
-import {  FaSearch } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaSearch } from "react-icons/fa";
 
 const providers = [
   { id: 1, name: "BSNL Broadband/Landline - Individual", img: "/logos/bsnl.png", link: "/broadband/bsnl" },
@@ -11,15 +10,18 @@ const providers = [
 ];
 
 export default function Broadband() {
+  const [query, setQuery] = useState("");
+
+  // Filter providers by the search query (case-insensitive)
+  const filteredProviders = providers.filter((p) =>
+    p.name.toLowerCase().includes(query.trim().toLowerCase())
+  );
+
   return (
     <div className="min-h-screen bg-gray-200 text-gray-800 m-4 p-4">
       {/* Header */}
       <header className="flex items-center justify-between p-4 bg-white shadow-sm rounded-2xl">
-        <div className="flex items-center gap-4">
-         
-          <h1 className="text-lg font-semibold">Select Provider</h1>
-        </div>
-        
+        <h1 className="text-lg font-semibold">Select Provider</h1>
       </header>
 
       {/* Search */}
@@ -28,8 +30,10 @@ export default function Broadband() {
           <FaSearch className="text-gray-400" />
           <input
             type="text"
-            placeholder="Select Provider"
+            placeholder="Search Provider"
             className="flex-1 bg-transparent focus:outline-none text-gray-700 placeholder-gray-400"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
           />
         </div>
       </div>
@@ -48,7 +52,6 @@ export default function Broadband() {
               Allow
             </button>
           </div>
-          
         </div>
       </section>
 
@@ -60,27 +63,52 @@ export default function Broadband() {
           </div>
 
           <ul className="divide-y">
-            {providers.map((p) => (
-              <li key={p.id} className="flex items-center gap-4 px-6 py-4 hover:bg-gray-50 transition">
-                <a href={p.link} className="flex items-center gap-4 w-full">
-                  <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden">
-                    {p.img ? (
-                      <img src={p.img} alt={p.name} className="w-10 h-10 object-contain" />
-                    ) : (
-                      <span className="text-sm font-semibold text-indigo-700">{p.name[0]}</span>
-                    )}
-                  </div>
+            {filteredProviders.length ? (
+              filteredProviders.map((p) => (
+                <li
+                  key={p.id}
+                  className="flex items-center gap-4 px-6 py-4 hover:bg-gray-50 transition"
+                >
+                  <a href={p.link} className="flex items-center gap-4 w-full">
+                    <div className="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden">
+                      {p.img ? (
+                        <img
+                          src={p.img}
+                          alt={p.name}
+                          className="w-12 h-12 object-contain"
+                        />
+                      ) : (
+                        <span className="text-lg font-semibold text-indigo-700">
+                          {p.name[0]}
+                        </span>
+                      )}
+                    </div>
 
-                  <div className="flex-1">
-                    <span className="block text-base font-medium text-gray-800">{p.name}</span>
-                  </div>
+                    <div className="flex-1">
+                      <span className="block text-base font-medium text-gray-800">
+                        {p.name}
+                      </span>
+                    </div>
 
-                  <svg className="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
-                    <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </a>
-              </li>
-            ))}
+                    <svg
+                      className="w-5 h-5 text-gray-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M9 6l6 6-6 6"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              ))
+            ) : (
+              <li className="px-6 py-4 text-gray-500 text-sm">No providers found</li>
+            )}
           </ul>
         </div>
       </main>
