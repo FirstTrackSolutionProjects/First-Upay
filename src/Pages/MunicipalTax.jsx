@@ -5,15 +5,40 @@ export default function MunicipalTaxProviders() {
   const [query, setQuery] = useState("");
 
   const providers = [
-    { id: 1, name: "Bhubaneswar Municipal Corporation", logo: "/logos/bmc.png" },
-    { id: 2, name: "Gorakhpur Nagar Nigam", logo: "/logos/gorakhpur.png" },
-    { id: 3, name: "Navi Mumbai Municipal Corporation Property Tax", logo: "/logos/nmmc.png" },
-    { id: 4, name: "Odisha Municipal Payments Property Tax", logo: "/logos/odisha.png" },
+    { id: 1, name: "Bhubaneswar Municipal Corporation", logo: "/logos/bmc.jpeg" },
+    { id: 2, name: "Gorakhpur Nagar Nigam", logo: "/logos/gorakhpur.jpeg" },
+    { id: 3, name: "Navi Mumbai Municipal Corporation Property Tax", logo: "/logos/nmmc.jpeg" },
+    { id: 4, name: "Odisha Municipal Payments Property Tax", logo: "/logos/propertytax.jpeg" },
   ];
 
   const allBillers = [
-    { id: 5, name: "Directorate of Municipal Administration Karnataka", logo: "/logos/karnataka.png" },
-    { id: 6, name: "Greater Chennai Corporation", logo: "/logos/chennai.png" },
+    { id: 5, name: "Directorate of Municipal Administration Karnataka", logo: "/logos/karnataka.jpeg" },
+    { id: 6, name: "Greater Chennai Corporation", logo: "/logos/chennai.jpeg" },
+    { id: 7, name: "Agartala Municipal Corporation", logo: "/logos/agartala.png" },
+    { id: 8, name: "Ahmedabad Municipal Corporation", logo: "/logos/ahmedabad.jpeg" },
+    { id: 9, name: "Ajmer Nagar Nigam", logo: "/logos/ajmer.png" },
+    { id: 10, name: "Bhubaneswar Municipal Corporation", logo: "/logos/bmc.jpeg" },
+    { id: 11, name: "Bicholim Municipal Council", logo: "/logos/propertytax.jpeg" },
+    { id: 12, name: "Bicholim Municipal Council Trade License", logo: "/logos/propertytax.jpeg" },
+    { id: 13, name: "Canacona Municipal Council Trade License", logo: "/logos/propertytax.jpeg" },
+    { id: 14, name: "Canacona Municipal Council", logo: "/logos/propertytax.jpeg" },
+    { id: 15, name: "Chhatrapati Sambhajinagar Municipal Corporation", logo: "/logos/sambhajinagar.png" },
+    { id: 16, name: "Corporation of City Panaji", logo: "/logos/propertytax.jpeg" },
+    { id: 17, name: "Corporation of City Panaji Trade License", logo: "/logos/propertytax.jpeg" },
+    { id: 18, name: "Cuncolim Municipal Council Trade License", logo: "/logos/propertytax.jpeg" },
+    { id: 19, name: "Cuncolim Municipal Council", logo: "/logos/propertytax.jpeg" },
+    { id: 20, name: "Curchorem Cacora Municipal Council Trade License", logo: "/logos/propertytax.jpeg" },
+    { id: 21, name: "Curchorem Cacora Municipal Council", logo: "/logos/propertytax.jpeg" },
+    { id: 22, name: "Davangere Citi Municipal Corporation", logo: "/logos/davangere.jpeg" },
+    { id: 23, name: "GRAM PANCHAYAT WANGI", logo: "/logos/wangi.png" },
+    { id: 24, name: "GRAMPANCHAYAT NEVARI", logo: "/logos/propertytax.jpeg" },
+    { id: 25, name: "Gorakhpur Nagar Nigam", logo: "/logos/gorakhpur.jpeg" },
+    { id: 26, name: "Gram Panchayat Dhamner", logo: "/logos/dhamner.png" },
+    { id: 27, name: "Gramin Nalpani Yojana Grampanchayat Shiye", logo: "/logos/propertytax.jpeg" },
+    { id: 28, name: "Grampanchayat Aitawade Khurd", logo: "/logos/aitawade.png" },
+    { id: 29, name: "Grampanchayat Ambegaon", logo: "/logos/propertytax.jpeg" },
+    { id: 30, name: "Grampanchayat Halondi Gram Nidhi", logo: "/logos/propertytax.jpeg" },
+
   ];
 
   // simple case-insensitive filter
@@ -28,7 +53,7 @@ export default function MunicipalTaxProviders() {
   return (
     <div className="min-h-screen bg-blue-100 text-gray-800 m-4 p-4">
       {/* Header */}
-      <div className="flex items-center p-4 shadow-md">
+      <div className="flex items-center p-4 shadow-md bg-indigo-500 ">
         <h1 className="text-lg font-semibold">Select Provider</h1>
       </div>
 

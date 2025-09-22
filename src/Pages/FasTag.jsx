@@ -4,12 +4,13 @@ const banks = ["ICICI Bank", "HDFC Bank", "SBI Bank", "Axis Bank", "Paytm FASTag
 
 const Fastag = () => {
   const [vehicleNumber, setVehicleNumber] = useState("");
-  const [bank, setBank] = useState("");
+  // const [bank, setBank] = useState("");
   const [amount, setAmount] = useState("");
 
   const handleRecharge = (e) => {
     e.preventDefault();
-    if (!vehicleNumber || !bank || !amount) {
+    // if (!vehicleNumber || !bank || !amount) {
+    if (!vehicleNumber || !amount) {
       alert("Please fill all details!");
       return;
     }
@@ -43,7 +44,7 @@ const Fastag = () => {
           />
         </div>
 
-        <div>
+        {/* <div>
           <label className="block font-medium mb-1">Select Bank</label>
           <select
             value={bank}
@@ -57,7 +58,7 @@ const Fastag = () => {
               </option>
             ))}
           </select>
-        </div>
+        </div> */}
 
         <div>
           <label className="block font-medium mb-1">Recharge Amount</label>

@@ -23,7 +23,7 @@ const CreditCard = () => {
       {/* Banner */}
       <div className="bg-indigo-100 rounded-xl p-5 mb-6 text-center border border-indigo-200 shadow-sm">
         <img
-            src="/images/credit-card.jpg"
+            src="/images/credit-card .jpg"
             alt="CreditCard"
             className="w-full h-96 object-cover lg:h-auto"
           />
