@@ -67,6 +67,8 @@ import PayRent from "./Pages/PayRent";
 import LoanRepayment from "./Pages/LoanRepayment";
 import Entertainment from "./Pages/Entertainment";
 import BookCylinder from "./Pages/BookCylinder";
+import BharatGasBooking from "./Pages/BharatGasBooking";
+import BharatGasCommercialBooking from "./Pages/BharatGasCommercialBooking";
 import Broadband from "./Pages/Broadband";
 import PipedGas from "./Pages/PipedGas";
 import Water from "./Pages/Water";
@@ -164,6 +166,8 @@ function App() {
           <Route path="/repayment" element={<LoanRepayment />} />
           <Route path="/entertainment" element={<Entertainment />} />
           <Route path="/Book-cylinder" element={<BookCylinder />} />
+          <Route path="/book/:provider" element={<BharatGasBooking />} />
+          <Route path="/book/commercial" element={<BharatGasCommercialBooking />} />
           <Route path="/broadband" element={<Broadband />} />
           <Route path="/piped-gas" element={<PipedGas />} />
           <Route path="/water" element={<Water />} />

@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
 const providers = [
-  { id: 1, name: "BSNL Broadband/Landline - Individual", img: "/logos/bsnl.png", link: "/broadband/bsnl" },
+  { id: 1, name: "BSNL Broadband/Landline - Individual", img: "/logos/bsnl.jpeg", link: "/broadband/bsnl" },
   { id: 2, name: "ACT Fibernet", img: "/logos/act.png", link: "/broadband/act" },
   { id: 3, name: "Airtel Broadband", img: "/logos/airtel.png", link: "/broadband/airtel" },
   { id: 4, name: "Airtel Landline", img: "/logos/airtel.png", link: "/broadband/airtel-landline" },
-  { id: 5, name: "Airtel Wi-Fi Recharge", img: "/logos/airtel-black.png", link: "/broadband/airtel-wifi" },
+  { id: 5, name: "Airtel Wi-Fi Recharge", img: "/logos/airtel-wifi.jpeg", link: "/broadband/airtel-wifi" },
 ];
 
 export default function Broadband() {

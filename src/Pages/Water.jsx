@@ -5,16 +5,16 @@ export default function Water() {
   const [search, setSearch] = useState("");
 
   const odishaBillers = [
-    { name: "Navi Mumbai Municipal Corporation Water Tax", logo: "/logos/navi.png" },
-    { name: "Odisha Municipal Payments Water Tax", logo: "/logos/odisha.png" },
+    { name: "Navi Mumbai Municipal Corporation Water Tax", logo: "/logos/nmmc.jpeg" },
+    { name: "Odisha Municipal Payments Water Tax", logo: "/logos/propertytax.jpeg" },
   ];
 
   const allBillers = [
-    { name: "Bangalore Water Supply and Sewerage Board", logo: "/logos/bangalore.png" },
-    { name: "PHED - Rajasthan", logo: "/logos/phed.png" },
-    { name: "Hyderabad Metropolitan Water Supply and Sewerage Board", logo: "/logos/hyderabad.png" },
+    { name: "Bangalore Water Supply and Sewerage Board", logo: "/logos/banglore.jpeg" },
+    { name: "PHED - Rajasthan", logo: "/logos/phed.jpeg" },
+    { name: "Hyderabad Metropolitan Water Supply and Sewerage Board", logo: "/logos/hyderabad.jpeg" },
     { name: "Kerala Water Authority (KWA)", logo: "/logos/kerala.png" },
-    { name: "AP PHED Itanagar and Naharlagun", logo: "/logos/ap.png" },
+    { name: "AP PHED Itanagar and Naharlagun", logo: "/logos/ap.jpeg" },
   ];
 
   const filterList = (list) =>

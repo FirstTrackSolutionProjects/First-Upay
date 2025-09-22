@@ -16,8 +16,8 @@ export default function ReferandEarn() {
   const moreSocials = [
     { name: "Twitter", icon: <FaTwitter size={28} className="text-sky-500" /> },
     { name: "Telegram", icon: <FaTelegram size={28} className="text-blue-400" /> },
-    { name: "YouTube", icon: <FaYoutube size={28}
-    className="text-red-600" />}
+    // { name: "YouTube", icon: <FaYoutube size={28}
+    // className="text-red-600" />}
   ];
 
   return (
