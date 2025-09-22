@@ -75,7 +75,8 @@ import NPS from "./Pages/NPS";
 import Trading from "./Pages/Trading"
 import CibilScore from "./Pages/CibilScore"
 import PNR from "./Pages/PNR";
-import Shopping from "./Pages/Shopping"
+import Shopping from "./Pages/Shopping";
+import HelpSupport from "./Pages/HelpSupport"
 import Footer from "./Components/Footer"
 
 
@@ -171,6 +172,7 @@ function App() {
           <Route path="/trading" element={<Trading />} />
           <Route path ="/cibil" element={<CibilScore />} />
           <Route path ="/pnr" element={<PNR />} />
+          <Route path ="/explore/help" element={<HelpSupport />} />
 
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
