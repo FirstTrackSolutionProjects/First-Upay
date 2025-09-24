@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
 const providers = [
-  { id: 1, name: "BSNL Broadband/Landline - Individual", img: "/logos/bsnl.jpeg", link: "/broadband/bsnl" },
+  { id: 1, name: "BSNL Broadband/Landline -       Individual", img: "/logos/bsnl.jpeg", link: "/broadband/bsnl" },
   { id: 2, name: "ACT Fibernet", img: "/logos/act.png", link: "/broadband/act" },
-  { id: 3, name: "Airtel Broadband", img: "/logos/airtel.png", link: "/broadband/airtel" },
-  { id: 4, name: "Airtel Landline", img: "/logos/airtel.png", link: "/broadband/airtel-landline" },
+  { id: 3, name: "Airtel Broadband", img: "/logos/airtel.jpeg", link: "/broadband/airtel" },
+  { id: 4, name: "Airtel Landline", img: "/logos/airtel-landline.jpeg", link: "/broadband/airtel-landline" },
   { id: 5, name: "Airtel Wi-Fi Recharge", img: "/logos/airtel-wifi.jpeg", link: "/broadband/airtel-wifi" },
 ];
 
@@ -69,8 +69,10 @@ export default function Broadband() {
                   key={p.id}
                   className="flex items-center gap-4 px-6 py-4 hover:bg-gray-50 transition"
                 >
-                  <a href={p.link} className="flex items-center gap-4 w-full">
-                    <div className="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden">
+                  {/* <a href={p.link} className="flex items-center gap-4 w-full" > */}
+                  
+                    {/* Image Circle */}
+                    <div className="flex-shrink-0 w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden">
                       {p.img ? (
                         <img
                           src={p.img}
@@ -84,14 +86,16 @@ export default function Broadband() {
                       )}
                     </div>
 
-                    <div className="flex-1">
-                      <span className="block text-base font-medium text-gray-800">
+                    {/* Provider Name */}
+                    <div className="flex-1 min-w-0">
+                      <span className="block text-base font-medium text-gray-800 line-clamp-2">
                         {p.name}
                       </span>
                     </div>
 
+                    {/* Arrow Icon */}
                     <svg
-                      className="w-5 h-5 text-gray-400"
+                      className="w-5 h-5 text-gray-400 flex-shrink-0"
                       viewBox="0 0 24 24"
                       fill="none"
                     >
@@ -103,7 +107,7 @@ export default function Broadband() {
                         strokeLinejoin="round"
                       />
                     </svg>
-                  </a>
+                  {/* </a> */}
                 </li>
               ))
             ) : (
