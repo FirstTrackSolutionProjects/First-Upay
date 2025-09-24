@@ -78,7 +78,11 @@ import Trading from "./Pages/Trading"
 import CibilScore from "./Pages/CibilScore"
 import PNR from "./Pages/PNR";
 import Shopping from "./Pages/Shopping";
-import HelpSupport from "./Pages/HelpSupport"
+import HelpSupport from "./Pages/HelpSupport";
+import BillingAndPayments from "./Pages/BillingAndPayments";
+import SavedBills from "./Pages/SavedBills";
+import MyRecords from "./Pages/MyRecords";
+import AccountCenter from "./Pages/AccountCenter";
 import Footer from "./Components/Footer"
 
 
@@ -176,6 +180,10 @@ function App() {
           <Route path="/trading" element={<Trading />} />
           <Route path ="/cibil" element={<CibilScore />} />
           <Route path ="/pnr" element={<PNR />} />
+          <Route path ="/explore/paymentsetting" element={<BillingAndPayments />} />
+          <Route path ="/explore/savedbills" element={<SavedBills />} />
+          <Route path ="/explore/orderbooking" element={<MyRecords />} />
+          <Route path ="/explore/accountcenter" element={<AccountCenter />} />
           <Route path ="/explore/help" element={<HelpSupport />} />
 
           <Route path="/about" element={<AboutUs />} />
