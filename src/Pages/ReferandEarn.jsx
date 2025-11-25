@@ -1,80 +1,91 @@
-import React from "react";
-import { useState } from "react";
-import { FaWhatsapp, FaFacebook, FaInstagram, FaTwitter, FaTelegram, FaYoutube } from "react-icons/fa";
-
+import React, { useState } from "react";
+import {
+  FaWhatsapp,
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaTelegram,
+} from "react-icons/fa";
 
 export default function ReferandEarn() {
-   const [showMore, setShowMore] = useState(false);
+  const [showMore, setShowMore] = useState(false);
 
-   
   const mainSocials = [
-    { name: "Whatsapp", icon: <FaWhatsapp size={28} className="text-green-500" /> },
-    { name: "Facebook", icon: <FaFacebook size={28} className="text-blue-600" /> },
-    { name: "Instagram", icon: <FaInstagram size={28} className="text-pink-500" /> },
+    { name: "Whatsapp", icon: <FaWhatsapp size={30} className="text-green-500" /> },
+    { name: "Facebook", icon: <FaFacebook size={30} className="text-blue-600" /> },
+    { name: "Instagram", icon: <FaInstagram size={30} className="text-pink-500" /> },
   ];
 
   const moreSocials = [
-    { name: "Twitter", icon: <FaTwitter size={28} className="text-sky-500" /> },
-    { name: "Telegram", icon: <FaTelegram size={28} className="text-blue-400" /> },
-    // { name: "YouTube", icon: <FaYoutube size={28}
-    // className="text-red-600" />}
+    { name: "Twitter", icon: <FaTwitter size={30} className="text-sky-500" /> },
+    { name: "Telegram", icon: <FaTelegram size={30} className="text-blue-400" /> },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 m-4">
-      
-      {/* <div className="bg-blue-400 px-6 py-10 text-center relative text-white">
-        <h1 className="text-3xl font-extrabold mb-3">Earn ₹200!</h1>
-        <p className="text-sm opacity-90 mb-6">
-          Invite your Indian contacts and NRI friends & family to PhonePe. <br />
-          Earn on their 1st UPI payment.
-        </p>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 p-6">
+      <div className="max-w-xl mx-auto">
 
-        <button className="bg-yellow-400 hover:bg-yellow-300 text-purple-900 font-semibold px-6 py-2 rounded-full flex items-center mx-auto shadow-md">
-          How to refer a friend <span className="ml-2">▶</span>
-        </button>
-      </div> */}
+        {/* Banner Section */}
+        <div className="bg-gradient-to-br from-purple-600 to-indigo-600 text-white p-8 rounded-3xl shadow-xl text-center">
+          <h1 className="text-3xl font-extrabold">Refer & Earn</h1>
+          <p className="mt-2 text-base opacity-90">
+            Invite friends & earn rewards on their first transaction!
+          </p>
 
-      {/* Invite Section */}
-      <div className="bg-white p-6 rounded-2xl mt-6 shadow-lg">
-        <h2 className="text-lg font-bold mb-5 text-center">Invite</h2>
-          {/* Main Social Media */}
-        <div className="grid grid-cols-2 gap-4">
-          {mainSocials.map((s, i) => (
-            <div
-              key={i}
-              className="bg-gray-50 border rounded-xl p-4 flex flex-col items-center cursor-pointer hover:bg-gray-100"
-            >
-              {s.icon}
-              <p className="text-sm mt-2">{s.name}</p>
-            </div>
-          ))}
-
-          {/* More Button */}
-            <div className="flex justify-center mt-4">
-          <button
-            onClick={() => setShowMore(!showMore)}
-            className="bg-gray-50 border rounded-xl p-4 flex flex-col items-center cursor-pointer hover:bg-gray-100 w-80"
-          >
-            {showMore ? "View Less" : "View All"}
-          </button>
-        </div>
+          <div className="mt-4 bg-white text-purple-700 font-bold w-max mx-auto px-5 py-2 rounded-full shadow-md">
+            Earn ₹200 / Referral
+          </div>
         </div>
 
-        {/* More Social Media (Expand on Click) */}
-        {showMore && (
-          <div className="grid grid-cols-2 gap-4 mt-4">
-            {moreSocials.map((s, i) => (
+        {/* Invite Section */}
+        <div className="bg-white p-6 rounded-3xl mt-8 shadow-lg">
+          <h2 className="text-lg font-bold mb-5 text-center text-gray-800">
+            Invite via Social Media
+          </h2>
+
+          {/* Main Socials */}
+          <div className="grid grid-cols-3 gap-4">
+            {mainSocials.map((s, index) => (
               <div
-                key={i}
-                className="bg-gray-50 border rounded-xl p-4 flex flex-col items-center cursor-pointer hover:bg-gray-100"
+                key={index}
+                className="bg-gray-50 hover:bg-gray-100 rounded-xl p-4 flex flex-col items-center shadow-sm transition cursor-pointer"
               >
                 {s.icon}
-                <p className="text-sm mt-2">{s.name}</p>
+                <p className="text-sm mt-2 font-medium text-gray-700">{s.name}</p>
               </div>
             ))}
           </div>
-        )}
+
+          {/* View All Button */}
+          <div className="flex justify-center mt-6">
+            <button
+              onClick={() => setShowMore(!showMore)}
+              className="text-purple-600 font-semibold hover:underline hover:text-purple-800"
+            >
+              {showMore ? "View Less" : "View All"}
+            </button>
+          </div>
+
+          {/* Extra Socials */}
+          {showMore && (
+            <div className="grid grid-cols-2 gap-4 mt-4">
+              {moreSocials.map((s, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-50 hover:bg-gray-100 rounded-xl p-4 flex flex-col items-center shadow-sm transition cursor-pointer"
+                >
+                  {s.icon}
+                  <p className="text-sm mt-2 font-medium text-gray-700">{s.name}</p>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Footer Section */}
+        <p className="text-center text-gray-600 mt-6 text-sm">
+          Share your referral link & earn rewards effortlessly! 🎉
+        </p>
       </div>
     </div>
   );

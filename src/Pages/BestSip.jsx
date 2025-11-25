@@ -35,7 +35,7 @@ export default function BestSip() {
       return5Y: "28.88%",
       minInvest: "₹500",
       fundSize: "₹47,389.62 Cr",
-      logo: "/logos/sbi.png",
+      logo: "/logos/SBI.png",
       link: "/funds/sbi-contra",
     },
     {
@@ -45,7 +45,7 @@ export default function BestSip() {
       return5Y: "27.37%",
       minInvest: "₹100",
       fundSize: "₹80,642.30 Cr",
-      logo: "/logos/hdfc.png",
+      logo: "/logos/hdfc-fund.jpeg",
       link: "/funds/hdfc-flexi",
     },
     {
@@ -55,19 +55,29 @@ export default function BestSip() {
       return5Y: "25.12%",
       minInvest: "₹100",
       fundSize: "₹38,452.10 Cr",
-      logo: "/logos/icici.png",
+      logo: "/logos/icici-fund.png",
       link: "/funds/icici-bluechip",
     },
     {
       id: 4,
-      name: "Axis Small Cap Fund",
-      category: "Equity: Small Cap",
+      name: "Parag Parikh Flexi Cap Fund",
+      category: "Equity: Flexi Cap",
       return5Y: "32.45%",
-      minInvest: "₹500",
+      minInvest: "₹1000",
       fundSize: "₹14,762.89 Cr",
-      logo: "/logos/axis.png",
-      link: "/funds/axis-smallcap",
+      logo: "/logos/parag-flexi.png",
+      link: "/funds/parag-flexi",
     },
+    {
+      id: 5,
+      name: "Fraklin India Flexi Cap Fund",
+      category: "Equity: Flexi Cap",
+      return5Y: "29.67%",
+      minInvest: "₹500",
+      fundSize: "₹26,389.45 Cr",
+      logo: "/logos/franklin-flexi.png",
+      link: "/funds/franklin-flexi",
+    }
   ];
 
   return (
