@@ -137,7 +137,7 @@ export default function BillingAndPayments() {
                 <Key className="w-4 h-4 text-gray-600" />
               </div>
               <span className="font-medium text-gray-800">
-                Paytm Assist (Auto OTP)
+                First UPay Assist (Auto OTP)
               </span>
             </div>
           </li>

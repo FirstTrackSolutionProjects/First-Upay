@@ -182,11 +182,11 @@ function App() {
           <Route path="/trading" element={<Trading />} />
           <Route path ="/cibil" element={<CibilScore />} />
           <Route path ="/pnr" element={<PNR />} />
-          <Route path ="/explore/paymentsetting" element={<BillingAndPayments />} />
-          <Route path ="/explore/savedbills" element={<SavedBills />} />
-          <Route path ="/explore/orderbooking" element={<MyRecords />} />
-          <Route path ="/explore/accountcenter" element={<AccountCenter />} />
-          <Route path ="/explore/help" element={<HelpSupport />} />
+          <Route path ="/app/paymentsetting" element={<BillingAndPayments />} />
+          <Route path ="/app/savedbills" element={<SavedBills />} />
+          <Route path ="/app/orderbooking" element={<MyRecords />} />
+          <Route path ="/app/accountcenter" element={<AccountCenter />} />
+          <Route path ="/app/help" element={<HelpSupport />} />
 
           <Route path="/about" element={<AboutUs />} />
           <Route path="/blog" element={<Blog />} />
