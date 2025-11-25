@@ -5,7 +5,7 @@ import { FiX } from "react-icons/fi";
 const SideBar = ({ isOpen, toggleSideBar }) => {
   const location = useLocation();
 
-  const isExplore = location.pathname === "/explore";
+  const isapp = location.pathname === "/app";
 
   return (
     <div
@@ -23,8 +23,8 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
       </div>
 
       <div className="flex-1 overflow-y-auto p-6 text-gray-700 font-medium flex flex-col gap-4">
-        {/* If we are on Explore page → show different sidebar */}
-        {isExplore ? (
+        {/* If we are on app page → show different sidebar */}
+        {isapp ? (
           <>
             <Link
               to="/"
@@ -63,7 +63,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
           
 
            <Link
-            to="/explore/paymentsetting"
+            to="/app/paymentsetting"
             className="flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500 hover:text-white"
             onClick={toggleSideBar}
             >
@@ -71,7 +71,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
             </Link>
 
             <Link
-            to="/explore/savedbills"
+            to="/app/savedbills"
             className="flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500 hover:text-white"
             onClick={toggleSideBar}
             >
@@ -79,7 +79,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
             </Link>
 
             <Link
-            to="/explore/orderbooking"
+            to="/app/orderbooking"
             className="flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500 hover:text-white"
             onClick={toggleSideBar}
             >
@@ -87,7 +87,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
             </Link>
 
             <Link
-            to="/explore/accountcenter"
+            to="/app/accountcenter"
             className="flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500 hover:text-white"
             onClick={toggleSideBar}
             >
@@ -95,7 +95,7 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
             </Link>
 
             <Link
-            to="/explore/help"
+            to="/app/help"
             className="flex items-center gap-3 p-3 rounded-lg hover:bg-purple-500 hover:text-white"
             onClick={toggleSideBar}
             >
@@ -134,11 +134,11 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
               <FaBlog /> Blog
             </Link>
             {/* <Link
-              to="/explore"
+              to="/app"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500 hover:text-white"
               onClick={toggleSideBar}
             >
-              <FaCompass /> Explore
+              <FaCompass /> app
             </Link> */}
             <Link
               to="/contact"

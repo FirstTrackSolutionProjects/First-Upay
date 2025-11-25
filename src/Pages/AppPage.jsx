@@ -7,7 +7,7 @@ import ManagePayment from '../Components/ManagePayment'
 import PromoBanner from '../Components/PromoBanner'
 
 
-const Explore = () => {
+const AppPage = () => {
   return (
     <>
    
@@ -28,4 +28,4 @@ const Explore = () => {
   )
 }
 
-export default Explore
+export default AppPage

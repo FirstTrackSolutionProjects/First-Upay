@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar"
 import SideBar from "./Components/SideBar"
 import Home from "./Pages/Home";
-import Explore from "./Pages/Explore";
+import AppPage from "./Pages/AppPage";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import Payment from "./Pages/Payment";
@@ -50,6 +50,7 @@ import SmartSaving from "./Pages/SmartSaving";
 import InstantLoan from "./Pages/InstantLoan";
 import MutualFunds from "./Pages/MutualFunds";
 import BestSip from "./Pages/BestSip";
+import SIPCalculator from "./Pages/SIPCalculator";
 import FundsDetail from "./Pages/FundsDetail";
 import Wallet from "./Pages/Wallet";
 import UpiQuickpay from "./Pages/UpiQuickpay";
@@ -95,7 +96,7 @@ function App() {
     setIsSideBarOpen(!isSideBarOpen);
   };
 
-    const noFooterPages = ["/explore"];
+    const noFooterPages = ["/app"];
 
   return (
     <>
@@ -108,7 +109,7 @@ function App() {
          <div className="max-w-7xl mx-auto">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/explore" element={<Explore />} />
+          <Route path="/app" element={<AppPage />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
@@ -140,6 +141,7 @@ function App() {
           <Route path="/smart-savings" element={<SmartSaving />} />
           <Route path="/mutual-funds" element={<MutualFunds />} />
           <Route path="/sip-funds" element={<BestSip />} />
+          <Route path="/sip-calculator" element={<SIPCalculator />} />
           <Route path="/funds/:id" element={<FundsDetail />} />
           <Route path="/gold-loan" element={<GoldLoan />} />
           {/* <Route path="/gold-sip" element={<GoldSip />} /> */}
