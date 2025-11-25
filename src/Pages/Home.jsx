@@ -1,5 +1,6 @@
 import React from 'react'
 import HeroSection from '../Components/HeroSection'
+import DownloadApp from '../Components/DownloadApp'
 import Services from '../Components/Services'
 // import Offers from '../Components/Offers'
 import Features from '../Components/Features'
@@ -12,6 +13,10 @@ const Home = () => {
    return (
     <>
       <HeroSection />
+
+      <section className="bg-gradient-to-r from-pink-100 via-red-100 to-yellow-100 py-12 mt-5">
+        <DownloadApp />
+      </section>
 
       <section className="bg-gradient-to-r from-green-100 via-blue-200 to-purple-300 py-12 mt-5">
         <Services />
