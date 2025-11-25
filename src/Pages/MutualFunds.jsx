@@ -72,6 +72,24 @@ export default function MutualFunds() {
         </div>
       </div>
 
+      {/* SIP Calculator */}
+      <div className="px-6 mt-8">
+        <Link
+          to="/sip-calculator"
+          className="w-full flex items-center justify-between bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-5 rounded-2xl shadow-md hover:opacity-90 transition"
+        >
+          <div>
+            <h3 className="text-lg font-semibold">SIP Calculator</h3>
+            <p className="text-xs text-purple-100">
+              Calculate your returns instantly
+            </p>
+          </div>
+
+          <FaChartLine className="text-white text-3xl" />
+        </Link>
+      </div>
+
+
       {/* More For You */}
       <div className="px-6 mt-6">
         <h2 className="text-lg font-bold text-gray-800">More for You</h2>

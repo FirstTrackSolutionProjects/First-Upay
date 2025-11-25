@@ -18,7 +18,7 @@ const DownloadApp = () => {
           
           {/* Google Play */}
           <a
-            href="/explore"
+            href="/app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -31,7 +31,7 @@ const DownloadApp = () => {
 
           {/* App Store */}
           <a
-            href="/explore"
+            href="/app"
             target="_blank"
             rel="noopener noreferrer"
           >

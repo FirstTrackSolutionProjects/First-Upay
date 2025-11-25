@@ -70,7 +70,7 @@ const Footer = () => {
 
             { /* Google Play Store Button */ }
               <a
-              href="explore" 
+              href="/app" 
               target="_blank"
               rel="noopener noreferrer"
               >
@@ -83,7 +83,7 @@ const Footer = () => {
 
             { /* Apple App Store Button */ }
             <a
-              href="/explore"
+              href="/app"
               target="_blank"
               rel="noopener noreferrer"
             >
