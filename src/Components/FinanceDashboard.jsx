@@ -8,7 +8,7 @@ import {
   FaShieldAlt, FaArrowDown,
   FaBalanceScale, FaClipboardList,
   FaMoneyBillWave, FaSatelliteDish,
-  FaCoins, FaHome, FaReceipt,
+  FaCoins, FaHome, FaChartBar,
   FaGift, FaCar, FaHandHoldingUsd
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -72,7 +72,7 @@ export default function FinanceDashboard() {
       title: "Investment",
       items: [
         { name: "Mutual Funds", icon: <FaBalanceScale size={28} className="text-orange-600" />, link: "/mutual-funds" },
-        { name: "Trading", icon: <FaChartLine size={28} className="text-blue-600" />, link: "/trading" },
+        { name: "Trading", icon: <FaChartBar  size={28} className="text-blue-600" />, link: "/trading" },
         { name: "Gold SIP", icon: <FaCoins size={28} className="text-yellow-500" />, link: "/invest-gold" },
         { name: "NPS", icon: <FaRegIdCard size={28} className="text-purple-600" />, link: "/nps" },
       ],
@@ -157,7 +157,7 @@ export default function FinanceDashboard() {
           <h3 className="text-lg font-semibold text-gray-800 mb-4">Check Your Status</h3>
           <div className="grid grid-cols-2 gap-4">
             <Link to="/cibil" className="flex flex-col items-center justify-center p-3 bg-white/70 rounded-lg hover:bg-indigo-50 transition">
-              <FaReceipt size={28} className="text-green-600" />
+              <FaChartLine size={28} className="text-green-600" />
               <span className="mt-2 text-sm font-medium text-gray-700"> Check Your Cibil Score</span>
             </Link>
             <Link to="/pnr" className="flex flex-col items-center justify-center p-3 bg-white/70 rounded-lg hover:bg-indigo-50 transition">

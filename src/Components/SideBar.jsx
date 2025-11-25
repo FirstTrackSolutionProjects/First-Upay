@@ -133,13 +133,13 @@ const SideBar = ({ isOpen, toggleSideBar }) => {
             >
               <FaBlog /> Blog
             </Link>
-            <Link
+            {/* <Link
               to="/explore"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500 hover:text-white"
               onClick={toggleSideBar}
             >
               <FaCompass /> Explore
-            </Link>
+            </Link> */}
             <Link
               to="/contact"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-blue-500 hover:text-white"
